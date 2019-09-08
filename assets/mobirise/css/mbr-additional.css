@@ -1802,15 +1802,18 @@ body {
 .cid-qD2zpvCBXz .dropdown-item:hover {
   color: #ff3366 !important;
 }
-.cid-qD38luqaxN {
-  background-image: url("../../../assets/images/mbr-1920x640.jpg");
-}
 .cid-qD38luqaxN .mbr-section-subtitle {
   letter-spacing: .2rem;
 }
 .cid-qD38luqaxN H1 {
   text-align: center;
   color: #ffffff;
+}
+.cid-qD38luqaxN DIV {
+  text-align: left;
+}
+.cid-qD38luqaxN H3 {
+  text-align: left;
 }
 .cid-qD6y9gFbIX {
   padding-top: 120px;
