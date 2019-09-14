@@ -35,10 +35,10 @@ body {
 }
 .display-4 {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .display-4 > .mbr-iconfont {
-  font-size: 1.6rem;
+  font-size: 2.08rem;
   font-weight: 400;
 }
 .display-5 {
@@ -72,9 +72,9 @@ body {
     line-height: calc( 1.4 * (1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-4 {
-    font-size: 0.8rem;
-    font-size: calc( 1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 1.04rem;
+    font-size: calc( 1.105rem + (1.3 - 1.105) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.105rem + (1.3 - 1.105) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-5 {
     font-size: 1.2rem;
@@ -678,13 +678,13 @@ a:hover {
   border: 1px solid #f5f6ff;
   border-radius: 10px;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1;
   min-height: 48px;
   padding: 14px 30px;
 }
 .form-control > .mbr-iconfont {
-  font-size: 1.6rem;
+  font-size: 2.08rem;
   font-weight: 400;
 }
 .form-control,
