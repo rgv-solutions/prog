@@ -1578,11 +1578,11 @@ body {
 .cid-rx3MBLTRlI .navbar {
   min-height: 77px;
   transition: all .3s;
-  background: #ffffff;
+  background: #e1e8ff;
 }
 .cid-rx3MBLTRlI .navbar.opened {
   transition: all .3s;
-  background: #ffffff !important;
+  background: #e1e8ff !important;
 }
 .cid-rx3MBLTRlI .navbar .dropdown-item {
   padding: .235rem 1.5rem;
@@ -1679,7 +1679,7 @@ body {
   }
 }
 .cid-rx3MBLTRlI .navbar.navbar-short {
-  background: #ffffff !important;
+  background: #e1e8ff !important;
   min-height: 60px;
 }
 .cid-rx3MBLTRlI .navbar.navbar-short .navbar-logo img {
@@ -1723,7 +1723,7 @@ body {
   padding: 0.667em 1.667em;
 }
 .cid-rx3MBLTRlI .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #e1e8ff;
 }
 .cid-rx3MBLTRlI .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
