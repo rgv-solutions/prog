@@ -3530,7 +3530,7 @@ body {
 .cid-rlhJueYMuB .form-control,
 .cid-rlhJueYMuB .field-input {
   padding: 0.5rem;
-  background-color: #f2f6ff;
+  background-color: #e1e8ff;
   border-color: #ffffff;
   color: #232323;
   transition: 0.4s;
@@ -3549,15 +3549,15 @@ body {
 }
 .cid-rlhJueYMuB input::-webkit-input-placeholder,
 .cid-rlhJueYMuB textarea::-webkit-input-placeholder {
-  color: #c1c1c1;
+  color: #343351;
 }
 .cid-rlhJueYMuB input:-moz-placeholder,
 .cid-rlhJueYMuB textarea:-moz-placeholder {
-  color: #c1c1c1;
+  color: #343351;
 }
 .cid-rlhJueYMuB .jq-selectbox li,
 .cid-rlhJueYMuB .jq-selectbox li {
-  background-color: #f2f6ff;
+  background-color: #e1e8ff;
   color: #000000;
 }
 .cid-rlhJueYMuB .jq-selectbox li:hover,
@@ -3566,7 +3566,7 @@ body {
   color: #000000;
 }
 .cid-rlhJueYMuB .jq-selectbox:hover .jq-selectbox__trigger-arrow {
-  border-top-color: #f2f6ff;
+  border-top-color: #e1e8ff;
 }
 .cid-rlhJueYMuB .jq-selectbox .jq-selectbox__trigger-arrow {
   border-top-color: #f2f6ff;
@@ -3594,6 +3594,9 @@ body {
 }
 .cid-rlhJueYMuB .mbr-text {
   color: #716c80;
+}
+.cid-rlhJueYMuB .mbr-section-subtitle {
+  color: #80d476;
 }
 .cid-rlf2I9dzS2 .google-map {
   height: 34rem;
