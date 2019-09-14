@@ -1,0 +1,19 @@
+@supports not (-webkit-overflow-scrolling: touch){
+	amp-script.fixed-element, .sticker{
+		display: none;
+	}
+}
+@media all and (display-mode: standalone) {
+	amp-script.fixed-element, .sticker{
+		display: none;
+	}
+}
+amp-script.fixed-element {
+	height: 0.5px;
+}
+amp-script.fixed-element, .sticker{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 10px;
+	opacity: 0.95;
+}
