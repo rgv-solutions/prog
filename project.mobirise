@@ -705,7 +705,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<!-- Type valid HTML here -->\n\n<iframe src=\"https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBrussels&amp;src=cWZxOXA5b2JrNjc5MXBrZXJxa3Eza21zdWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uYmUjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%238E24AA&amp;color=%23F6BF26&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=1&amp;showTabs=1&amp;showCalendars=1&amp;hl=fr&amp;title=ITME\" style=\"border: 0;padding:10px;\" width=\"100%\" height=\"600\" frameborder=\"0\" scrolling=\"no\"></iframe>",
-          "_customCSS": "/* Type valid CSS here */\n\n ",
+          "_customCSS": "#calendarEmbedWrapper {\n    width: 80%;\n    min-height: 300px;\n    margin-left: 10%;\n    position: relative;\n}\n#calendarEmbed,#calendarEmbedBlocker {\n    width: 100%;\n    height: 100%;\n    position: absolute;\n}\n#calendarEmbedBlocker {\n    background-color: #e15151;\n}\n#calendarEmbedBlocker p {\n    width: 50%;\n    margin-left: 25%;\n    margin-top: 19%;\n    text-align: center;\n    font-size: x-large;\n}\n\n ",
           "alias": "code-editor",
           "_tags": [
             "Extension"

@@ -2043,8 +2043,27 @@ body {
 .cid-rlf3GQxDMj H2 {
   color: #57468b;
 }
-#custom-html-8 {
-  /* Type valid CSS here */
+#custom-html-8 #calendarEmbedWrapper {
+  width: 80%;
+  min-height: 300px;
+  margin-left: 10%;
+  position: relative;
+}
+#custom-html-8 #calendarEmbed,
+#custom-html-8 #calendarEmbedBlocker {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#custom-html-8 #calendarEmbedBlocker {
+  background-color: #e15151;
+}
+#custom-html-8 #calendarEmbedBlocker p {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 19%;
+  text-align: center;
+  font-size: x-large;
 }
 .cid-rC94Nv3ACu {
   padding-top: 60px;
