@@ -772,8 +772,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n\n<iframe src=\"https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23B39DDB&amp;ctz=Europe%2FBrussels&amp;src=cmcwNzA1NjNAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y2xhc3Nyb29tMTA2NzU3MTE3NjE1OTc4NTQxNjEwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=cWZxOXA5b2JrNjc5MXBrZXJxa3Eza21zdWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uYmUjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB&amp;color=%23B39DDB&amp;color=%23007b83&amp;color=%238E24AA&amp;color=%23F6BF26\" style=\"border-width:0\" width=\"798\" height=\"600\" frameborder=\"0\" scrolling=\"no\"></iframe>",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<iframe src=\"https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBrussels&amp;src=cWZxOXA5b2JrNjc5MXBrZXJxa3Eza21zdWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uYmUjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%238E24AA&amp;color=%23F6BF26&amp;showTitle=1&amp;showNav=1&amp;showDate=1&amp;showPrint=1&amp;showTabs=1&amp;showCalendars=1&amp;hl=fr&amp;title=ITME\" style=\"border-width:0\" width=\"800\" height=\"600\" frameborder=\"0\" scrolling=\"no\"></iframe>",
+          "_customCSS": "/* Type valid CSS here */\n\n ",
           "alias": "code-editor",
           "_tags": [
             "Extension"
