@@ -2317,50 +2317,6 @@ body {
 .cid-rlhJueYMuB textarea {
   min-height: 160px;
 }
-.cid-rlhJueYMuB .form-control,
-.cid-rlhJueYMuB .field-input {
-  padding: 0.5rem;
-  background-color: #e1e8ff;
-  border-color: #ffffff;
-  color: #232323;
-  transition: 0.4s;
-  box-shadow: none;
-  outline: none;
-}
-.cid-rlhJueYMuB .form-control:hover,
-.cid-rlhJueYMuB .field-input:hover,
-.cid-rlhJueYMuB .form-control:focus,
-.cid-rlhJueYMuB .field-input:focus {
-  background-color: #f2f6ff;
-  border-color: #ffffff;
-  color: #ffffff;
-  box-shadow: none;
-  outline: none;
-}
-.cid-rlhJueYMuB input::-webkit-input-placeholder,
-.cid-rlhJueYMuB textarea::-webkit-input-placeholder {
-  color: #343351;
-}
-.cid-rlhJueYMuB input:-moz-placeholder,
-.cid-rlhJueYMuB textarea:-moz-placeholder {
-  color: #343351;
-}
-.cid-rlhJueYMuB .jq-selectbox li,
-.cid-rlhJueYMuB .jq-selectbox li {
-  background-color: #e1e8ff;
-  color: #000000;
-}
-.cid-rlhJueYMuB .jq-selectbox li:hover,
-.cid-rlhJueYMuB .jq-selectbox li.selected {
-  background-color: #f2f6ff;
-  color: #000000;
-}
-.cid-rlhJueYMuB .jq-selectbox:hover .jq-selectbox__trigger-arrow {
-  border-top-color: #e1e8ff;
-}
-.cid-rlhJueYMuB .jq-selectbox .jq-selectbox__trigger-arrow {
-  border-top-color: #f2f6ff;
-}
 .cid-rlhJueYMuB H5 {
   color: #57468b;
   padding-bottom: 2rem;
