@@ -2301,15 +2301,92 @@ body {
 }
 #custom-html-d {
   /* Type valid CSS here */
+  /* Navbar / Run button bar */
+  /* The console container element */
+  /* The inner console element. */
+  /* The cursor. */
+  /* The cursor color when the console looses focus. */
+  /* The current prompt text color */
+  /* The command history */
+  /* The text color when in input mode. */
+  /* Previously entered input. */
+  /* The text color of the output. */
 }
-#custom-html-d div {
-  padding: 80px 0;
-  color: #777;
-  text-align: center;
+#custom-html-d body {
+  background-color: #323232;
 }
-#custom-html-d p {
-  font-size: 60px;
-  color: #777;
+#custom-html-d #editor {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  bottom: 208px;
+  left: 0;
+}
+#custom-html-d #navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 44px;
+  background-color: #3B3B3B;
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#custom-html-d #runbtn {
+  position: absolute;
+  height: 80%;
+  left: 0;
+}
+#custom-html-d #clearbtn {
+  position: absolute;
+  height: 24px;
+  right: 0;
+  bottom: 0;
+  z-index: 1000000;
+}
+#custom-html-d #examples {
+  position: absolute;
+  right: 0;
+}
+#custom-html-d #console {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  right: 0;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  border-top: 2px solid #3B3B3B;
+}
+#custom-html-d .jqconsole {
+  padding: 0px;
+  padding-left: 2px;
+  margin: 0px;
+}
+#custom-html-d .jqconsole-cursor {
+  background-color: gray;
+}
+#custom-html-d .jqconsole-blurred .jqconsole-cursor {
+  background-color: #666;
+}
+#custom-html-d .jqconsole-prompt {
+  color: #0d0;
+}
+#custom-html-d .jqconsole-old-prompt {
+  color: #0b0;
+  font-weight: normal;
+}
+#custom-html-d .jqconsole-input {
+  color: #dd0;
+}
+#custom-html-d .jqconsole-old-input {
+  color: #bb0;
+  font-weight: normal;
+}
+#custom-html-d .jqconsole-output {
+  color: white;
 }
 .cid-rC3mAh41jc {
   padding-top: 75px;
