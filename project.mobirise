@@ -44,7 +44,7 @@
         "url": "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 20,
+    "uniqCompNum": 13,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -56,7 +56,7 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "",
+        "header_custom": "<script src=\"lib/jquery.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n<script src=\"lib/jqconsole.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n<script src=\"lib/ace/ace.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
         "footer_custom": "",
         "html_before": ""
       },
@@ -947,11 +947,33 @@
           "_name": "title02",
           "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <select title=\"Align\" name=\"align\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#716c80\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-start\" mbr-class=\"{'justify-content-md-center':align==2, 'justify-content-md-end':align==3}\">\n            <div class=\"mbr-white col-sm-12 col-md-10 col-lg-7\">\n                <h1 class=\"mbr-section-title mbr-regular align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Python</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" mbr-class=\"{'pt-3':showTitle}\">Lorem ipsum dolor sit amet, consectetur adipiscing\n                    elit.</h3>\n                <p class=\"mbr-text mbr-light align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-class=\"{'pt-3':showSubTitle || showTitle}\"><br><a href=\"https://python.iutsf.org/lecon-1-afficher-les-variables-les-calculs/\">    Leçon 1 - Afficher, saisir, variables, calculs\n</a><br>    <a href=\"https://python.iutsf.org/lecon-2-les-structures-conditionnelles/\">Leçon 2 - Les structures conditionnelles\n</a><br>    <a href=\"https://python.iutsf.org/lecon-3-les-fonctions/\">Leçon 3 - Les fonctions\n</a><br>    <a href=\"https://python.iutsf.org/lecon-4-les-boucles/\">Leçon 4 - Les boucles\n</a><br>    <a href=\"https://python.iutsf.org/lecon-5-les-listes/\">Leçon 5 - Les listes\n</a><br>    <a href=\"https://python.iutsf.org/lecon-6-les-fichiers/\">Leçon 6 - Les fichiers</a>\n<br>    <a href=\"https://python.iutsf.org/lecon-7-les-dictionnaires/\">Leçon 7 - Les dictionnaires\n</a><br>    <a href=\"https://python.iutsf.org/lecon-8-les-expressions-regulieres/\">Leçon 8 - Les expressions régulières\n</a><br><br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"align-center mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">READ MORE</a>\n                    <a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">CONTACT US</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rCkMnCwm9s",
+          "_anchor": "title02-j",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "title02-j"
+          "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n\n\n\n<title>Piethon online</title>\n[JS_CODE_0]\n[JS_CODE_1]\n[JS_CODE_2]\n<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"styles.css\">\n\n\n<div id=\"editor\"># Say hello!\nx = \"Hello, piethon\"\nprint x\n</div>\n<div id=\"navbar\">\n\t<button id=\"runbtn\">Run</button>\n\t<select id=\"examples\" name=\"Examples\">\n\t  <option value=\"-1\">Examples</option>\n\t</select>\n</div>\n<div id=\"console\">\n\t<button id=\"clearbtn\">Clear</button>\n</div>\n\n[JS_CODE_3]\n[JS_CODE_4]\n[JS_CODE_5]\n[JS_CODE_6]\n\n",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-d",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script src=\"grammar/piethon.js\"></script>",
+            "<script src=\"main.js\"></script>",
+            "<script src=\"examples.js\"></script>",
+            "<script src=\"lib/jquery.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
+            "<script src=\"lib/jqconsole.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
+            "<script src=\"lib/ace/ace.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
+            "<script>\n\t// Set up the console\n\tvar jqconsole = $('#console').jqconsole('', '>>>');\n\tvar startPrompt = function () {\n\t  // Start the prompt with history enabled.\n\t  jqconsole.Prompt(true, function (input) {\n\t    // Output input with the class jqconsole-output.\n\t    jqconsole.Write(input + '\\n', 'jqconsole-output');\n\t    // Restart the prompt.\n\t    startPrompt();\n\t  });\n\t};\n\t//startPrompt();\n\tjqconsole.Write('>> ','jqconsole-output');\n\t// Set up the editor\n\tvar editor = ace.edit(\"editor\");\n\teditor.setTheme(\"ace/theme/idle_fingers\");\n\teditor.getSession().setMode(\"ace/mode/python\");\n\n\t// Handle run button interaction\n\t$( \"#runbtn\" ).click(function() {\n\t\tresetForRun();\n\t\ttry {\n\t\t\t// Grammar is not perfect, have to have it end with a line break\n\t\t\tvar output = piethon.parse(editor.getValue()+'\\n')\n\t\t\tif(output == true) {\n\t\t\t\tjqconsole.Write('piethon\\nSyntactically correct program: '+output+'\\nRunning program:\\n', 'jqconsole-output');\n\t\t\t\teval(finalprogram);\n\t\t\t\tjqconsole.Write('\\n', 'jqconsole-output');\n\t\t\t} \n\t\t} catch(exception) {\n\t\t\tjqconsole.Write(exception + '\\n\\n', 'jqconsole-output');\n\t\t}\n\t\tjqconsole.Write('>> ','jqconsole-output');\n\t});\n\t\n\t// Clear console button\n\t$( \"#clearbtn\" ).click(function() {\n\t\tjqconsole.Reset();\n\t});\n\t\n\t// Populate the dropdown examples select\n\tvar select = $('#examples');\n\tfor(var i =0;i<examples.length;i++) {\n\t\tselect.append('<option value=\"'+i+'\">--'+examples[i].name+'</option>');\n\t}\n\tselect.change(function() {\n\t\tvar selectedndx = parseInt($( \"#examples option:selected\" ).attr('value'), 10);\n\t\tif(selectedndx > -1) {\n\t\t\teditor.setValue(examples[selectedndx].code);\n\t\t\teditor.gotoLine(1);\n\t\t}\n\t});\n\t \n\t\n</script>"
+          ]
         },
         {
           "alias": false,

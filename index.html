@@ -26,7 +26,9 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
-  
+  <script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/jqconsole.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
   <section class="menu cid-rx3MBLTRlI" once="menu" id="menu02-a1">
@@ -321,6 +323,94 @@
     </div>
 </section>
 
+<div id="custom-html-d"><!-- Type valid HTML here -->
+
+
+
+
+<title>Piethon online</title>
+<script src="grammar/piethon.js"></script>
+<script src="main.js"></script>
+<script src="examples.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+
+<div id="editor"># Say hello!
+x = "Hello, piethon"
+print x
+</div>
+<div id="navbar">
+	<button id="runbtn">Run</button>
+	<select id="examples" name="Examples">
+	  <option value="-1">Examples</option>
+	</select>
+</div>
+<div id="console">
+	<button id="clearbtn">Clear</button>
+</div>
+
+<script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/jqconsole.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	// Set up the console
+	var jqconsole = $('#console').jqconsole('', '>>>');
+	var startPrompt = function () {
+	  // Start the prompt with history enabled.
+	  jqconsole.Prompt(true, function (input) {
+	    // Output input with the class jqconsole-output.
+	    jqconsole.Write(input + '\n', 'jqconsole-output');
+	    // Restart the prompt.
+	    startPrompt();
+	  });
+	};
+	//startPrompt();
+	jqconsole.Write('>> ','jqconsole-output');
+	// Set up the editor
+	var editor = ace.edit("editor");
+	editor.setTheme("ace/theme/idle_fingers");
+	editor.getSession().setMode("ace/mode/python");
+
+	// Handle run button interaction
+	$( "#runbtn" ).click(function() {
+		resetForRun();
+		try {
+			// Grammar is not perfect, have to have it end with a line break
+			var output = piethon.parse(editor.getValue()+'\n')
+			if(output == true) {
+				jqconsole.Write('piethon\nSyntactically correct program: '+output+'\nRunning program:\n', 'jqconsole-output');
+				eval(finalprogram);
+				jqconsole.Write('\n', 'jqconsole-output');
+			} 
+		} catch(exception) {
+			jqconsole.Write(exception + '\n\n', 'jqconsole-output');
+		}
+		jqconsole.Write('>> ','jqconsole-output');
+	});
+	
+	// Clear console button
+	$( "#clearbtn" ).click(function() {
+		jqconsole.Reset();
+	});
+	
+	// Populate the dropdown examples select
+	var select = $('#examples');
+	for(var i =0;i<examples.length;i++) {
+		select.append('<option value="'+i+'">--'+examples[i].name+'</option>');
+	}
+	select.change(function() {
+		var selectedndx = parseInt($( "#examples option:selected" ).attr('value'), 10);
+		if(selectedndx > -1) {
+			editor.setValue(examples[selectedndx].code);
+			editor.gotoLine(1);
+		}
+	});
+	 
+	
+</script>
+
+</div>
+
 <section class="progress-bars3 cid-rC3mAh41jc" id="progress-bars02-6">
 
     
@@ -435,7 +525,7 @@ Marguerite Massart&nbsp;</strong><br></p>
 
             <div class="col-lg-6 my-auto pb-4 mbr-form" data-form-type="formoid">
 <!--Formbuilder Form-->
-<form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="q4OA4s10n5UksbWh5cLXcM4Yzc1yB3wlPVDySsDuLmmcAzfXzyxb8uwsQvKZyH1YE91ledRVKJLgu+YBLATTY1IPPrWsAaF1BYFH7XSBgbhb8qgCghEIz7MonOYdaQPN.jZQT2ShsiL2+lx5Y+IJ7UeeZeGL64WdbTIUjef733hswrgSaUnh1kuhfMT8ICtTYShcT/+pmyFKrdN8AkDcYt1M+7/PvDwLugEkvCQwvCQKRaecqG2Vlxet/W+EL4FvI">
+<form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="Z9ALmrIbb2Oh0niJR5ihMg3AsJEwRBzQXd6c9YIPJebEiGyDfjHrPCkjObInsLtacsLVDQplcSR4U+7UJcml9aXKE5rV5UxqPHAQDik+XpHg5ND/gdNvXOUrI3vh6nEg.LfLALHSg+06kV624+XSvwLmRMEPck/ozcyi2sSdIR4p/jiEpM07sRdaJLdApJzZGVlHCmEEtRE5HDh7DQ3DEsYfdIG9NPCAhrsy6ra6wxcpAK4ZNu2JO4otiWd+JOuvR">
 <div class="form-row">
 <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Merci pour votre mail..</div>
 <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
