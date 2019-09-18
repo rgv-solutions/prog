@@ -56,8 +56,8 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "<script src=\"lib/jquery.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n<script src=\"lib/jqconsole.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n<script src=\"lib/ace/ace.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
-        "footer_custom": "",
+        "header_custom": "<script src=\"grammar/piethon.js\"></script>\n<script src=\"main.js\"></script>\n<script src=\"examples.js\"></script>\n<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"styles.css\">",
+        "footer_custom": "<script src=\"lib/jquery.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n<script src=\"lib/jqconsole.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n<script src=\"lib/ace/ace.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
         "html_before": ""
       },
       "components": [
@@ -956,7 +956,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n<title>Python online</title>\n[JS_CODE_0]\n[JS_CODE_1]\n[JS_CODE_2]\n<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"styles.css\">\n\n\n<div id=\"editor\"># Say hello!\nx = \"Hello, piethon\"\nprint x\n</div>\n<div id=\"navbar\">\n\t<button id=\"runbtn\">Run</button>\n\t<select id=\"examples\" name=\"Examples\">\n\t  <option value=\"-1\">Examples</option>\n\t</select>\n</div>\n<div id=\"console\">\n\t<button id=\"clearbtn\">Clear</button>\n</div>\n\n[JS_CODE_3]\n[JS_CODE_4]\n[JS_CODE_5]\n[JS_CODE_6]\n\n",
+          "_customHTML": "<!-- Type valid HTML here -->\n<title>Python online</title>\n[JS_CODE_0]\n[JS_CODE_1]\n[JS_CODE_2]\n\n<div id=\"editor\"># Say hello!\nx = \"Hello, piethon\"\nprint x\n</div>\n<div id=\"navbar\">\n\t<button id=\"runbtn\">Run</button>\n\t<select id=\"examples\" name=\"Examples\">\n\t  <option value=\"-1\">Examples</option>\n\t</select>\n</div>\n<div id=\"console\">\n\t<button id=\"clearbtn\">Clear</button>\n</div>\n\n[JS_CODE_3]\n[JS_CODE_4]\n[JS_CODE_5]\n[JS_CODE_6]\n\n",
           "_customCSS": "/* Type valid CSS here */\nbody {\n\tbackground-color : #323232;\n}\n\n#editor { \n    position: absolute;\n    top: 55px;\n    right: 0;\n    bottom: 208px;\n    left: 0;\n}\n\n/* Navbar / Run button bar */\n#navbar {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tleft : 0;\n\theight: 44px;\n\tbackground-color:#3B3B3B;\n\t-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n\t-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n\tbox-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n}\n\n#runbtn {\n\tposition: absolute;\n\theight : 80%;\n\tleft : 0;\n}\n\n#clearbtn {\n\tposition: absolute;\n\theight : 24px;\n\tright : 0;\n\tbottom: 0;\n\tz-index:1000000;\n}\n\n#examples {\n\tposition: absolute;\n\tright : 0;\n}\n\n/* The console container element */\n#console {\n\tpadding: 0px;\n\tmargin:0px;\n\tposition: absolute;\n\tright :0;\n\theight: 200px;\n\tbottom : 0;\n\tleft : 0;\n\tbackground-color:black;\n\tborder-top: 2px solid #3B3B3B;\n}\n/* The inner console element. */\n.jqconsole {\n    padding: 0px;\n\tpadding-left:2px;\n\tmargin:0px;\n}\n/* The cursor. */\n.jqconsole-cursor {\n    background-color: gray;\n}\n/* The cursor color when the console looses focus. */\n.jqconsole-blurred .jqconsole-cursor {\n    background-color: #666;\n}\n/* The current prompt text color */\n.jqconsole-prompt {\n    color: #0d0;\n}\n/* The command history */\n.jqconsole-old-prompt {\n    color: #0b0;\n    font-weight: normal;\n}\n/* The text color when in input mode. */\n.jqconsole-input {\n    color: #dd0;\n}\n/* Previously entered input. */\n.jqconsole-old-input {\n    color: #bb0;\n    font-weight: normal;\n}\n/* The text color of the output. */\n.jqconsole-output {\n    color: white;\n}",
           "alias": "code-editor",
           "_tags": [
@@ -1047,7 +1047,9 @@
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": false,
