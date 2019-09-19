@@ -325,85 +325,6 @@
 </section>
 
 <div id="custom-html-d"><!-- Type valid HTML here -->
-<title>Python online</title>
-<script src="grammar/piethon.js"></script>
-<script src="main.js"></script>
-<script src="examples.js"></script>
-
-<div id="editor"># Say hello!
-x = "Hello, piethon"
-print x
-</div>
-<div id="navbar">
-	<button id="runbtn">Run</button>
-	<select id="examples" name="Examples">
-	  <option value="-1">Examples</option>
-	</select>
-</div>
-<div id="console">
-	<button id="clearbtn">Clear</button>
-</div>
-
-<script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
-<script src="lib/jqconsole.js" type="text/javascript" charset="utf-8"></script>
-<script src="lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-<script>
-	// Set up the console
-	var jqconsole = $('#console').jqconsole('', '>>>');
-	var startPrompt = function () {
-	  // Start the prompt with history enabled.
-	  jqconsole.Prompt(true, function (input) {
-	    // Output input with the class jqconsole-output.
-	    jqconsole.Write(input + '\n', 'jqconsole-output');
-	    // Restart the prompt.
-	    startPrompt();
-	  });
-	};
-	//startPrompt();
-	jqconsole.Write('>> ','jqconsole-output');
-	// Set up the editor
-	var editor = ace.edit("editor");
-	editor.setTheme("ace/theme/idle_fingers");
-	editor.getSession().setMode("ace/mode/python");
-
-	// Handle run button interaction
-	$( "#runbtn" ).click(function() {
-		resetForRun();
-		try {
-			// Grammar is not perfect, have to have it end with a line break
-			var output = piethon.parse(editor.getValue()+'\n')
-			if(output == true) {
-				jqconsole.Write('piethon\nSyntactically correct program: '+output+'\nRunning program:\n', 'jqconsole-output');
-				eval(finalprogram);
-				jqconsole.Write('\n', 'jqconsole-output');
-			} 
-		} catch(exception) {
-			jqconsole.Write(exception + '\n\n', 'jqconsole-output');
-		}
-		jqconsole.Write('>> ','jqconsole-output');
-	});
-	
-	// Clear console button
-	$( "#clearbtn" ).click(function() {
-		jqconsole.Reset();
-	});
-	
-	// Populate the dropdown examples select
-	var select = $('#examples');
-	for(var i =0;i<examples.length;i++) {
-		select.append('<option value="'+i+'">--'+examples[i].name+'</option>');
-	}
-	select.change(function() {
-		var selectedndx = parseInt($( "#examples option:selected" ).attr('value'), 10);
-		if(selectedndx > -1) {
-			editor.setValue(examples[selectedndx].code);
-			editor.gotoLine(1);
-		}
-	});
-	 
-	
-</script>
-
 </div>
 
 <section class="progress-bars3 cid-rC3mAh41jc" id="progress-bars02-6">
@@ -520,7 +441,7 @@ Marguerite Massart&nbsp;</strong><br></p>
 
             <div class="col-lg-6 my-auto pb-4 mbr-form" data-form-type="formoid">
 <!--Formbuilder Form-->
-<form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="tgcWxhEP4ujbEUQM7ad07tYsLGmteojaXQn93bhkoqbL/QZG5SNZ+3y58Qh0nehCQmb2ZpiUCzseFedwp3HC+3OZBzmIhkX2AkG7pN6WxRncPvNsnJDQG0ZFMPN9EO5O.T+iLw1p3Hy4wK9XhzlAwQp+nAsPeLd4+J6IuRgKE9kxCzpKyjNWnalDHHQ/A0kpfxwT+asc882tpgDgmG+yeDCghdvwdcwwmhvqk1PDmQM1QYx64NWulcPSxnxirOKVn">
+<form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="Too2UOlRYmGBQkzvVYstxsIR6MSWnrXzW5woW6b0z726wbu6H3JkZSV1vHiWtpvXLXEyVuh3CXfmsGYvLk9lBzIsLVVfq0wpeO5FcfhNJagIf7e/ee/HRfR36edK/5Ub.UNX0oL+0cNvXiEOHzDSt2vLwyIeRPmRC3R5i1/+9j1BaW2ly9slgdyEi+fusMdUCBJFUMRSFC1gQiu9brpON8z7EHEfO8DMhhHf6a58udGFs87E48mTAwRcrYtmzF3sU">
 <div class="form-row">
 <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Merci pour votre mail..</div>
 <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>

@@ -956,7 +956,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n<title>Python online</title>\n[JS_CODE_0]\n[JS_CODE_1]\n[JS_CODE_2]\n\n<div id=\"editor\"># Say hello!\nx = \"Hello, piethon\"\nprint x\n</div>\n<div id=\"navbar\">\n\t<button id=\"runbtn\">Run</button>\n\t<select id=\"examples\" name=\"Examples\">\n\t  <option value=\"-1\">Examples</option>\n\t</select>\n</div>\n<div id=\"console\">\n\t<button id=\"clearbtn\">Clear</button>\n</div>\n\n[JS_CODE_3]\n[JS_CODE_4]\n[JS_CODE_5]\n[JS_CODE_6]\n\n",
+          "_customHTML": "<!-- Type valid HTML here -->\n",
           "_customCSS": "/* Type valid CSS here */\nbody {\n\tbackground-color : #323232;\n}\n\n#editor { \n    position: absolute;\n    top: 55px;\n    right: 0;\n    bottom: 208px;\n    left: 0;\n}\n\n/* Navbar / Run button bar */\n#navbar {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tleft : 0;\n\theight: 44px;\n\tbackground-color:#3B3B3B;\n\t-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n\t-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n\tbox-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n}\n\n#runbtn {\n\tposition: absolute;\n\theight : 80%;\n\tleft : 0;\n}\n\n#clearbtn {\n\tposition: absolute;\n\theight : 24px;\n\tright : 0;\n\tbottom: 0;\n\tz-index:1000000;\n}\n\n#examples {\n\tposition: absolute;\n\tright : 0;\n}\n\n/* The console container element */\n#console {\n\tpadding: 0px;\n\tmargin:0px;\n\tposition: absolute;\n\tright :0;\n\theight: 200px;\n\tbottom : 0;\n\tleft : 0;\n\tbackground-color:black;\n\tborder-top: 2px solid #3B3B3B;\n}\n/* The inner console element. */\n.jqconsole {\n    padding: 0px;\n\tpadding-left:2px;\n\tmargin:0px;\n}\n/* The cursor. */\n.jqconsole-cursor {\n    background-color: gray;\n}\n/* The cursor color when the console looses focus. */\n.jqconsole-blurred .jqconsole-cursor {\n    background-color: #666;\n}\n/* The current prompt text color */\n.jqconsole-prompt {\n    color: #0d0;\n}\n/* The command history */\n.jqconsole-old-prompt {\n    color: #0b0;\n    font-weight: normal;\n}\n/* The text color when in input mode. */\n.jqconsole-input {\n    color: #dd0;\n}\n/* Previously entered input. */\n.jqconsole-old-input {\n    color: #bb0;\n    font-weight: normal;\n}\n/* The text color of the output. */\n.jqconsole-output {\n    color: white;\n}",
           "alias": "code-editor",
           "_tags": [
@@ -965,15 +965,7 @@
           "_name": "pro.custom-html",
           "_anchor": "custom-html-d",
           "_PHPplaceholders": [],
-          "_JSplaceholders": [
-            "<script src=\"grammar/piethon.js\"></script>",
-            "<script src=\"main.js\"></script>",
-            "<script src=\"examples.js\"></script>",
-            "<script src=\"lib/jquery.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
-            "<script src=\"lib/jqconsole.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
-            "<script src=\"lib/ace/ace.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
-            "<script>\n\t// Set up the console\n\tvar jqconsole = $('#console').jqconsole('', '>>>');\n\tvar startPrompt = function () {\n\t  // Start the prompt with history enabled.\n\t  jqconsole.Prompt(true, function (input) {\n\t    // Output input with the class jqconsole-output.\n\t    jqconsole.Write(input + '\\n', 'jqconsole-output');\n\t    // Restart the prompt.\n\t    startPrompt();\n\t  });\n\t};\n\t//startPrompt();\n\tjqconsole.Write('>> ','jqconsole-output');\n\t// Set up the editor\n\tvar editor = ace.edit(\"editor\");\n\teditor.setTheme(\"ace/theme/idle_fingers\");\n\teditor.getSession().setMode(\"ace/mode/python\");\n\n\t// Handle run button interaction\n\t$( \"#runbtn\" ).click(function() {\n\t\tresetForRun();\n\t\ttry {\n\t\t\t// Grammar is not perfect, have to have it end with a line break\n\t\t\tvar output = piethon.parse(editor.getValue()+'\\n')\n\t\t\tif(output == true) {\n\t\t\t\tjqconsole.Write('piethon\\nSyntactically correct program: '+output+'\\nRunning program:\\n', 'jqconsole-output');\n\t\t\t\teval(finalprogram);\n\t\t\t\tjqconsole.Write('\\n', 'jqconsole-output');\n\t\t\t} \n\t\t} catch(exception) {\n\t\t\tjqconsole.Write(exception + '\\n\\n', 'jqconsole-output');\n\t\t}\n\t\tjqconsole.Write('>> ','jqconsole-output');\n\t});\n\t\n\t// Clear console button\n\t$( \"#clearbtn\" ).click(function() {\n\t\tjqconsole.Reset();\n\t});\n\t\n\t// Populate the dropdown examples select\n\tvar select = $('#examples');\n\tfor(var i =0;i<examples.length;i++) {\n\t\tselect.append('<option value=\"'+i+'\">--'+examples[i].name+'</option>');\n\t}\n\tselect.change(function() {\n\t\tvar selectedndx = parseInt($( \"#examples option:selected\" ).attr('value'), 10);\n\t\tif(selectedndx > -1) {\n\t\t\teditor.setValue(examples[selectedndx].code);\n\t\t\teditor.gotoLine(1);\n\t\t}\n\t});\n\t \n\t\n</script>"
-          ]
+          "_JSplaceholders": []
         },
         {
           "alias": false,
