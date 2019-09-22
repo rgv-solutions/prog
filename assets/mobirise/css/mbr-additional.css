@@ -1522,6 +1522,166 @@ section.lazy-placeholder:after {
   text-align: center;
   font-size: x-large;
 }
+.cid-rCkoJWatAI {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-rCkoJWatAI H1 {
+  color: #57468b;
+  text-align: center;
+}
+.cid-rCkoJWatAI .align-left {
+  margin: auto;
+}
+.cid-rCkoJWatAI .row {
+  justify-content: space-between;
+}
+.cid-rCkoJWatAI .mbr-text,
+.cid-rCkoJWatAI .mbr-section-btn {
+  color: #716c80;
+}
+.cid-rCkoJWatAI .block-border {
+  border-left: 2px solid #efefef;
+  padding-left: 4rem;
+}
+.cid-rCkoJWatAI .mbr-iconfont {
+  padding-left: 0.4rem;
+}
+.cid-rCkoJWatAI .link {
+  display: flex;
+  width: fit-content;
+  transition: all 0.3s;
+  align-items: center;
+}
+.cid-rCkoJWatAI .link .link-ico {
+  padding-top: 2px;
+  transition: padding 0.3s;
+}
+.cid-rCkoJWatAI .link:hover {
+  color: #ff8a73 !important;
+}
+.cid-rCkoJWatAI .link:hover .link-ico {
+  color: #ff8a73 !important;
+  padding-left: 10px;
+}
+.cid-rCkoJWatAI DIV {
+  color: #57468b;
+}
+@media (max-width: 992px) {
+  .cid-rCkoJWatAI .block-border {
+    border: none;
+    padding-left: 1rem;
+  }
+  .cid-rCkoJWatAI h1 {
+    padding-bottom: 1rem;
+  }
+}
+.cid-rCkMnCwm9s {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #ffffff;
+}
+.cid-rCkMnCwm9s H1 {
+  color: #57468b;
+}
+.cid-rCkMnCwm9s .mbr-text,
+.cid-rCkMnCwm9s .mbr-section-btn {
+  color: #716c80;
+  text-align: left;
+}
+.cid-rCkMnCwm9s H3 {
+  color: #716c80;
+}
+#custom-html-d {
+  /* Type valid CSS here */
+  /* Navbar / Run button bar */
+  /* The console container element */
+  /* The inner console element. */
+  /* The cursor. */
+  /* The cursor color when the console looses focus. */
+  /* The current prompt text color */
+  /* The command history */
+  /* The text color when in input mode. */
+  /* Previously entered input. */
+  /* The text color of the output. */
+}
+#custom-html-d body {
+  background-color: #323232;
+}
+#custom-html-d #editor {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  bottom: 208px;
+  left: 0;
+}
+#custom-html-d #navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 44px;
+  background-color: #3B3B3B;
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#custom-html-d #runbtn {
+  position: absolute;
+  height: 80%;
+  left: 0;
+}
+#custom-html-d #clearbtn {
+  position: absolute;
+  height: 24px;
+  right: 0;
+  bottom: 0;
+  z-index: 1000000;
+}
+#custom-html-d #examples {
+  position: absolute;
+  right: 0;
+}
+#custom-html-d #console {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  right: 0;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  border-top: 2px solid #3B3B3B;
+}
+#custom-html-d .jqconsole {
+  padding: 0px;
+  padding-left: 2px;
+  margin: 0px;
+}
+#custom-html-d .jqconsole-cursor {
+  background-color: gray;
+}
+#custom-html-d .jqconsole-blurred .jqconsole-cursor {
+  background-color: #666;
+}
+#custom-html-d .jqconsole-prompt {
+  color: #0d0;
+}
+#custom-html-d .jqconsole-old-prompt {
+  color: #0b0;
+  font-weight: normal;
+}
+#custom-html-d .jqconsole-input {
+  color: #dd0;
+}
+#custom-html-d .jqconsole-old-input {
+  color: #bb0;
+  font-weight: normal;
+}
+#custom-html-d .jqconsole-output {
+  color: white;
+}
 .cid-rC94Nv3ACu {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1684,166 +1844,6 @@ section.lazy-placeholder:after {
     transform: none;
     box-shadow: none;
   }
-}
-.cid-rCkoJWatAI {
-  padding-top: 45px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-}
-.cid-rCkoJWatAI H1 {
-  color: #57468b;
-  text-align: center;
-}
-.cid-rCkoJWatAI .align-left {
-  margin: auto;
-}
-.cid-rCkoJWatAI .row {
-  justify-content: space-between;
-}
-.cid-rCkoJWatAI .mbr-text,
-.cid-rCkoJWatAI .mbr-section-btn {
-  color: #716c80;
-}
-.cid-rCkoJWatAI .block-border {
-  border-left: 2px solid #efefef;
-  padding-left: 4rem;
-}
-.cid-rCkoJWatAI .mbr-iconfont {
-  padding-left: 0.4rem;
-}
-.cid-rCkoJWatAI .link {
-  display: flex;
-  width: fit-content;
-  transition: all 0.3s;
-  align-items: center;
-}
-.cid-rCkoJWatAI .link .link-ico {
-  padding-top: 2px;
-  transition: padding 0.3s;
-}
-.cid-rCkoJWatAI .link:hover {
-  color: #ff8a73 !important;
-}
-.cid-rCkoJWatAI .link:hover .link-ico {
-  color: #ff8a73 !important;
-  padding-left: 10px;
-}
-.cid-rCkoJWatAI DIV {
-  color: #57468b;
-}
-@media (max-width: 992px) {
-  .cid-rCkoJWatAI .block-border {
-    border: none;
-    padding-left: 1rem;
-  }
-  .cid-rCkoJWatAI h1 {
-    padding-bottom: 1rem;
-  }
-}
-.cid-rCkMnCwm9s {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  background-color: #ffffff;
-}
-.cid-rCkMnCwm9s H1 {
-  color: #57468b;
-}
-.cid-rCkMnCwm9s .mbr-text,
-.cid-rCkMnCwm9s .mbr-section-btn {
-  color: #716c80;
-  text-align: left;
-}
-.cid-rCkMnCwm9s H3 {
-  color: #716c80;
-}
-#custom-html-d {
-  /* Type valid CSS here */
-  /* Navbar / Run button bar */
-  /* The console container element */
-  /* The inner console element. */
-  /* The cursor. */
-  /* The cursor color when the console looses focus. */
-  /* The current prompt text color */
-  /* The command history */
-  /* The text color when in input mode. */
-  /* Previously entered input. */
-  /* The text color of the output. */
-}
-#custom-html-d body {
-  background-color: #323232;
-}
-#custom-html-d #editor {
-  position: absolute;
-  top: 55px;
-  right: 0;
-  bottom: 208px;
-  left: 0;
-}
-#custom-html-d #navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 44px;
-  background-color: #3B3B3B;
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
-}
-#custom-html-d #runbtn {
-  position: absolute;
-  height: 80%;
-  left: 0;
-}
-#custom-html-d #clearbtn {
-  position: absolute;
-  height: 24px;
-  right: 0;
-  bottom: 0;
-  z-index: 1000000;
-}
-#custom-html-d #examples {
-  position: absolute;
-  right: 0;
-}
-#custom-html-d #console {
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  right: 0;
-  height: 200px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  border-top: 2px solid #3B3B3B;
-}
-#custom-html-d .jqconsole {
-  padding: 0px;
-  padding-left: 2px;
-  margin: 0px;
-}
-#custom-html-d .jqconsole-cursor {
-  background-color: gray;
-}
-#custom-html-d .jqconsole-blurred .jqconsole-cursor {
-  background-color: #666;
-}
-#custom-html-d .jqconsole-prompt {
-  color: #0d0;
-}
-#custom-html-d .jqconsole-old-prompt {
-  color: #0b0;
-  font-weight: normal;
-}
-#custom-html-d .jqconsole-input {
-  color: #dd0;
-}
-#custom-html-d .jqconsole-old-input {
-  color: #bb0;
-  font-weight: normal;
-}
-#custom-html-d .jqconsole-output {
-  color: white;
 }
 .cid-rC3mAh41jc {
   padding-top: 75px;

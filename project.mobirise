@@ -721,6 +721,125 @@
         {
           "alias": false,
           "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "H1": {
+              "color": "#57468b",
+              "text-align": "center"
+            },
+            ".align-left": {
+              "margin": "auto"
+            },
+            ".row": {
+              "justify-content": "space-between"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#716c80"
+            },
+            ".block-border": {
+              "border-left": "2px solid @borderColor",
+              "padding-left": "4rem"
+            },
+            ".mbr-iconfont": {
+              "padding-left": "0.4rem"
+            },
+            ".link": {
+              "display": "flex",
+              "width": "fit-content",
+              "transition": "all 0.3s",
+              "align-items": "center",
+              ".link-ico": {
+                "padding-top": "2px",
+                "transition": "padding 0.3s"
+              },
+              "&:hover": {
+                "color": "@primaryColor !important"
+              },
+              "&:hover .link-ico": {
+                "color": "@primaryColor !important",
+                "padding-left": "10px"
+              }
+            },
+            "DIV": {
+              "color": "#57468b"
+            },
+            "@media (max-width: 992px)": {
+              ".block-border": {
+                "border": "none",
+                "padding-left": "1rem"
+              },
+              "h1": {
+                "padding-bottom": "1rem"
+              }
+            }
+          },
+          "_name": "content06",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#efefef\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row\">\n\n            <div class=\"col-md-12 col-lg-6 align-left\">\n                <h1 class=\"mbr-section-title align-left mbr-white mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Installer EduPython</h1>\n            </div>\n\n\n            <div class=\"col-md-12 col-lg-6 block-border align-left\">\n                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .media-content\"><a href=\"http://download.tuxfamily.org/edupython/Setup_EP27.exe\">http://download.tuxfamily.org/edupython/Setup_EP27.exe</a><br></p>\n\n            </div>\n\n\n\n        </div>\n    </div>\n</section>",
+          "_cid": "rCkoJWatAI",
+          "_anchor": "content06-c",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "H1": {
+              "color": "#57468b"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#716c80",
+              "text-align": "left"
+            },
+            "H3": {
+              "color": "#716c80"
+            }
+          },
+          "_name": "title02",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <select title=\"Align\" name=\"align\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#716c80\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-start\" mbr-class=\"{'justify-content-md-center':align==2, 'justify-content-md-end':align==3}\">\n            <div class=\"mbr-white col-sm-12 col-md-10 col-lg-7\">\n                <h1 class=\"mbr-section-title mbr-regular align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Python</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" mbr-class=\"{'pt-3':showTitle}\">Lorem ipsum dolor sit amet, consectetur adipiscing\n                    elit.</h3>\n                <p class=\"mbr-text mbr-light align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-class=\"{'pt-3':showSubTitle || showTitle}\"><br><a href=\"https://python.iutsf.org/lecon-1-afficher-les-variables-les-calculs/\">    Leçon 1 - Afficher, saisir, variables, calculs\n</a><br>    <a href=\"https://python.iutsf.org/lecon-2-les-structures-conditionnelles/\">Leçon 2 - Les structures conditionnelles\n</a><br>    <a href=\"https://python.iutsf.org/lecon-3-les-fonctions/\">Leçon 3 - Les fonctions\n</a><br>    <a href=\"https://python.iutsf.org/lecon-4-les-boucles/\">Leçon 4 - Les boucles\n</a><br>    <a href=\"https://python.iutsf.org/lecon-5-les-listes/\">Leçon 5 - Les listes\n</a><br>    <a href=\"https://python.iutsf.org/lecon-6-les-fichiers/\">Leçon 6 - Les fichiers</a>\n<br>    <a href=\"https://python.iutsf.org/lecon-7-les-dictionnaires/\">Leçon 7 - Les dictionnaires\n</a><br>    <a href=\"https://python.iutsf.org/lecon-8-les-expressions-regulieres/\">Leçon 8 - Les expressions régulières\n</a><br><br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"align-center mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">READ MORE</a>\n                    <a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">CONTACT US</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rCkMnCwm9s",
+          "_anchor": "title02-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n",
+          "_customCSS": "/* Type valid CSS here */\nbody {\n\tbackground-color : #323232;\n}\n\n#editor { \n    position: absolute;\n    top: 55px;\n    right: 0;\n    bottom: 208px;\n    left: 0;\n}\n\n/* Navbar / Run button bar */\n#navbar {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tleft : 0;\n\theight: 44px;\n\tbackground-color:#3B3B3B;\n\t-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n\t-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n\tbox-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n}\n\n#runbtn {\n\tposition: absolute;\n\theight : 80%;\n\tleft : 0;\n}\n\n#clearbtn {\n\tposition: absolute;\n\theight : 24px;\n\tright : 0;\n\tbottom: 0;\n\tz-index:1000000;\n}\n\n#examples {\n\tposition: absolute;\n\tright : 0;\n}\n\n/* The console container element */\n#console {\n\tpadding: 0px;\n\tmargin:0px;\n\tposition: absolute;\n\tright :0;\n\theight: 200px;\n\tbottom : 0;\n\tleft : 0;\n\tbackground-color:black;\n\tborder-top: 2px solid #3B3B3B;\n}\n/* The inner console element. */\n.jqconsole {\n    padding: 0px;\n\tpadding-left:2px;\n\tmargin:0px;\n}\n/* The cursor. */\n.jqconsole-cursor {\n    background-color: gray;\n}\n/* The cursor color when the console looses focus. */\n.jqconsole-blurred .jqconsole-cursor {\n    background-color: #666;\n}\n/* The current prompt text color */\n.jqconsole-prompt {\n    color: #0d0;\n}\n/* The command history */\n.jqconsole-old-prompt {\n    color: #0b0;\n    font-weight: normal;\n}\n/* The text color when in input mode. */\n.jqconsole-input {\n    color: #dd0;\n}\n/* Previously entered input. */\n.jqconsole-old-input {\n    color: #bb0;\n    font-weight: normal;\n}\n/* The text color of the output. */\n.jqconsole-output {\n    color: white;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-d",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
+        },
+        {
+          "alias": false,
+          "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = 'color')": {
@@ -847,125 +966,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "H1": {
-              "color": "#57468b",
-              "text-align": "center"
-            },
-            ".align-left": {
-              "margin": "auto"
-            },
-            ".row": {
-              "justify-content": "space-between"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#716c80"
-            },
-            ".block-border": {
-              "border-left": "2px solid @borderColor",
-              "padding-left": "4rem"
-            },
-            ".mbr-iconfont": {
-              "padding-left": "0.4rem"
-            },
-            ".link": {
-              "display": "flex",
-              "width": "fit-content",
-              "transition": "all 0.3s",
-              "align-items": "center",
-              ".link-ico": {
-                "padding-top": "2px",
-                "transition": "padding 0.3s"
-              },
-              "&:hover": {
-                "color": "@primaryColor !important"
-              },
-              "&:hover .link-ico": {
-                "color": "@primaryColor !important",
-                "padding-left": "10px"
-              }
-            },
-            "DIV": {
-              "color": "#57468b"
-            },
-            "@media (max-width: 992px)": {
-              ".block-border": {
-                "border": "none",
-                "padding-left": "1rem"
-              },
-              "h1": {
-                "padding-bottom": "1rem"
-              }
-            }
-          },
-          "_name": "content06",
-          "_customHTML": "<section class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#efefef\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row\">\n\n            <div class=\"col-md-12 col-lg-6 align-left\">\n                <h1 class=\"mbr-section-title align-left mbr-white mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Installer EduPython</h1>\n            </div>\n\n\n            <div class=\"col-md-12 col-lg-6 block-border align-left\">\n                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .media-content\"><a href=\"http://download.tuxfamily.org/edupython/Setup_EP27.exe\">http://download.tuxfamily.org/edupython/Setup_EP27.exe</a><br></p>\n\n            </div>\n\n\n\n        </div>\n    </div>\n</section>",
-          "_cid": "rCkoJWatAI",
-          "_anchor": "content06-c",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "H1": {
-              "color": "#57468b"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#716c80",
-              "text-align": "left"
-            },
-            "H3": {
-              "color": "#716c80"
-            }
-          },
-          "_name": "title02",
-          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <select title=\"Align\" name=\"align\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#716c80\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-start\" mbr-class=\"{'justify-content-md-center':align==2, 'justify-content-md-end':align==3}\">\n            <div class=\"mbr-white col-sm-12 col-md-10 col-lg-7\">\n                <h1 class=\"mbr-section-title mbr-regular align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Python</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" mbr-class=\"{'pt-3':showTitle}\">Lorem ipsum dolor sit amet, consectetur adipiscing\n                    elit.</h3>\n                <p class=\"mbr-text mbr-light align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-class=\"{'pt-3':showSubTitle || showTitle}\"><br><a href=\"https://python.iutsf.org/lecon-1-afficher-les-variables-les-calculs/\">    Leçon 1 - Afficher, saisir, variables, calculs\n</a><br>    <a href=\"https://python.iutsf.org/lecon-2-les-structures-conditionnelles/\">Leçon 2 - Les structures conditionnelles\n</a><br>    <a href=\"https://python.iutsf.org/lecon-3-les-fonctions/\">Leçon 3 - Les fonctions\n</a><br>    <a href=\"https://python.iutsf.org/lecon-4-les-boucles/\">Leçon 4 - Les boucles\n</a><br>    <a href=\"https://python.iutsf.org/lecon-5-les-listes/\">Leçon 5 - Les listes\n</a><br>    <a href=\"https://python.iutsf.org/lecon-6-les-fichiers/\">Leçon 6 - Les fichiers</a>\n<br>    <a href=\"https://python.iutsf.org/lecon-7-les-dictionnaires/\">Leçon 7 - Les dictionnaires\n</a><br>    <a href=\"https://python.iutsf.org/lecon-8-les-expressions-regulieres/\">Leçon 8 - Les expressions régulières\n</a><br><br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"align-center mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">READ MORE</a>\n                    <a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">CONTACT US</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rCkMnCwm9s",
-          "_anchor": "title02-j",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n",
-          "_customCSS": "/* Type valid CSS here */\nbody {\n\tbackground-color : #323232;\n}\n\n#editor { \n    position: absolute;\n    top: 55px;\n    right: 0;\n    bottom: 208px;\n    left: 0;\n}\n\n/* Navbar / Run button bar */\n#navbar {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tleft : 0;\n\theight: 44px;\n\tbackground-color:#3B3B3B;\n\t-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n\t-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n\tbox-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);\n}\n\n#runbtn {\n\tposition: absolute;\n\theight : 80%;\n\tleft : 0;\n}\n\n#clearbtn {\n\tposition: absolute;\n\theight : 24px;\n\tright : 0;\n\tbottom: 0;\n\tz-index:1000000;\n}\n\n#examples {\n\tposition: absolute;\n\tright : 0;\n}\n\n/* The console container element */\n#console {\n\tpadding: 0px;\n\tmargin:0px;\n\tposition: absolute;\n\tright :0;\n\theight: 200px;\n\tbottom : 0;\n\tleft : 0;\n\tbackground-color:black;\n\tborder-top: 2px solid #3B3B3B;\n}\n/* The inner console element. */\n.jqconsole {\n    padding: 0px;\n\tpadding-left:2px;\n\tmargin:0px;\n}\n/* The cursor. */\n.jqconsole-cursor {\n    background-color: gray;\n}\n/* The cursor color when the console looses focus. */\n.jqconsole-blurred .jqconsole-cursor {\n    background-color: #666;\n}\n/* The current prompt text color */\n.jqconsole-prompt {\n    color: #0d0;\n}\n/* The command history */\n.jqconsole-old-prompt {\n    color: #0b0;\n    font-weight: normal;\n}\n/* The text color when in input mode. */\n.jqconsole-input {\n    color: #dd0;\n}\n/* Previously entered input. */\n.jqconsole-old-input {\n    color: #bb0;\n    font-weight: normal;\n}\n/* The text color of the output. */\n.jqconsole-output {\n    color: white;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-d",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
         },
         {
           "alias": false,
