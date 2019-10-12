@@ -1025,11 +1025,11 @@ section.lazy-placeholder:after {
 }
 .cid-rEGnqIZtkc {
   padding-top: 30px;
-  padding-bottom: 0px;
-  background-color: #232323;
+  padding-bottom: 15px;
+  background-color: #43a637;
 }
 .cid-rEGnqIZtkc H1 {
-  color: #75f166;
+  color: #ffffff;
   text-align: left;
 }
 .cid-rEGnqIZtkc .mbr-text,
@@ -1046,7 +1046,7 @@ section.lazy-placeholder:after {
 }
 .cid-rEGB8JqtU4 H1 {
   color: #75f166;
-  text-align: left;
+  text-align: center;
 }
 .cid-rEGB8JqtU4 .mbr-text,
 .cid-rEGB8JqtU4 .mbr-section-btn {
