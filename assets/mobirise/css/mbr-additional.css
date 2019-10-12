@@ -1027,7 +1027,7 @@ section.lazy-placeholder:after {
 }
 .cid-rEGnqIZtkc H1 {
   color: #ffffff;
-  text-align: left;
+  text-align: center;
 }
 .cid-rEGnqIZtkc .mbr-text,
 .cid-rEGnqIZtkc .mbr-section-btn {
@@ -1255,6 +1255,11 @@ section.lazy-placeholder:after {
 .cid-rEGQ82QIY2 .btn1 {
   color: #efefef;
 }
+.cid-rEGQ82QIY2 .text2,
+.cid-rEGQ82QIY2 .btn2 {
+  text-align: left;
+  color: #ffffff;
+}
 .cid-rEGKzymiLj {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -1282,7 +1287,7 @@ section.lazy-placeholder:after {
 }
 .cid-rEGKzymiLj .subtitle2 {
   text-align: left;
-  color: #ffffff;
+  color: #80d476;
 }
 .cid-rEGKzymiLj .title2 {
   color: #80d476;
