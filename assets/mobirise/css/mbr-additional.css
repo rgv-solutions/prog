@@ -993,20 +993,36 @@ section.lazy-placeholder:after {
     left: -1rem;
   }
 }
-.cid-rEG2Q3wigy {
-  padding-top: 0px;
-  padding-bottom: 150px;
-  background-image: url("../../../assets/images/43384076-computer-programmer-showing-software-engineer-and-programming-stock-photo-1-1300x1007.jpg");
+.cid-rEGlbREHdL {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/43384076-computer-programmer-showing-software-engineer-and-programming-stock-photo-1-1300x1007.jpeg");
 }
-.cid-rEG2Q3wigy H1 {
-  color: #232323;
-  text-align: center;
+.cid-rEGlbREHdL H1 {
+  color: #ffffff;
+  text-align: left;
 }
-.cid-rEG2Q3wigy .mbr-text,
-.cid-rEG2Q3wigy .mbr-section-btn {
+.cid-rEGlbREHdL .mbr-text,
+.cid-rEGlbREHdL .mbr-section-btn {
   color: #716c80;
 }
-.cid-rEG2Q3wigy H3 {
+.cid-rEGlbREHdL H3 {
+  color: #716c80;
+}
+.cid-rEGnqIZtkc {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: #ff2e2e;
+}
+.cid-rEGnqIZtkc H1 {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-rEGnqIZtkc .mbr-text,
+.cid-rEGnqIZtkc .mbr-section-btn {
+  color: #716c80;
+}
+.cid-rEGnqIZtkc H3 {
   color: #716c80;
 }
 .cid-rC94Nv3ACu {
