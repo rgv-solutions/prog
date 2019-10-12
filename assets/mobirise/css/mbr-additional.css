@@ -23,10 +23,10 @@ body {
 }
 .display-4 {
   font-family: 'Nova Mono', monospace;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .display-4 > .mbr-iconfont {
-  font-size: 1.6rem;
+  font-size: 1.76rem;
   font-weight: 400;
 }
 .display-5 {
@@ -60,9 +60,9 @@ body {
     line-height: calc( 1.4 * (1.49rem + (2.4 - 1.49) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-4 {
-    font-size: 0.8rem;
-    font-size: calc( 1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 0.88rem;
+    font-size: calc( 1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-5 {
     font-size: 1.2rem;
@@ -97,7 +97,7 @@ body {
   background-color: #c63d5c !important;
 }
 .bg-warning {
-  background-color: #75f166 !important;
+  background-color: #43a637 !important;
 }
 .bg-danger {
   background-color: #b1a374 !important;
@@ -184,23 +184,23 @@ body {
 }
 .btn-warning,
 .btn-warning:active {
-  background-color: #75f166 !important;
-  border-color: #75f166 !important;
-  color: #0f5107 !important;
+  background-color: #43a637 !important;
+  border-color: #43a637 !important;
+  color: #ffffff !important;
 }
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning.focus,
 .btn-warning.active {
-  color: #0f5107 !important;
-  background-color: #36eb20 !important;
-  border-color: #36eb20 !important;
+  color: #ffffff !important;
+  background-color: #2c6d24 !important;
+  border-color: #2c6d24 !important;
 }
 .btn-warning.disabled,
 .btn-warning:disabled {
-  color: #0f5107 !important;
-  background-color: #36eb20 !important;
-  border-color: #36eb20 !important;
+  color: #ffffff !important;
+  background-color: #2c6d24 !important;
+  border-color: #2c6d24 !important;
 }
 .btn-danger,
 .btn-danger:active {
@@ -348,22 +348,22 @@ body {
 .btn-warning-outline,
 .btn-warning-outline:active {
   background: none;
-  border-color: #2add14;
-  color: #2add14;
+  border-color: #24591e;
+  color: #24591e;
 }
 .btn-warning-outline:hover,
 .btn-warning-outline:focus,
 .btn-warning-outline.focus,
 .btn-warning-outline.active {
-  color: #0f5107;
-  background-color: #75f166;
-  border-color: #75f166;
+  color: #ffffff;
+  background-color: #43a637;
+  border-color: #43a637;
 }
 .btn-warning-outline.disabled,
 .btn-warning-outline:disabled {
-  color: #0f5107 !important;
-  background-color: #75f166 !important;
-  border-color: #75f166 !important;
+  color: #ffffff !important;
+  background-color: #43a637 !important;
+  border-color: #43a637 !important;
 }
 .btn-danger-outline,
 .btn-danger-outline:active {
@@ -432,7 +432,7 @@ body {
   color: #c63d5c !important;
 }
 .text-warning {
-  color: #75f166 !important;
+  color: #43a637 !important;
 }
 .text-danger {
   color: #b1a374 !important;
@@ -461,7 +461,7 @@ a.text-info:focus {
 }
 a.text-warning:hover,
 a.text-warning:focus {
-  color: #2add14 !important;
+  color: #24591e !important;
 }
 a.text-danger:hover,
 a.text-danger:focus {
@@ -482,7 +482,7 @@ a.text-black:focus {
   background-color: #c63d5c;
 }
 .alert-warning {
-  background-color: #75f166;
+  background-color: #43a637;
 }
 .alert-danger {
   background-color: #b1a374;
@@ -517,7 +517,7 @@ a:hover {
 }
 .mbr-plan-header.bg-warning .mbr-plan-subtitle,
 .mbr-plan-header.bg-warning .mbr-plan-price-desc {
-  color: #ffffff;
+  color: #8ed786;
 }
 .mbr-plan-header.bg-danger .mbr-plan-subtitle,
 .mbr-plan-header.bg-danger .mbr-plan-price-desc {
@@ -526,10 +526,10 @@ a:hover {
 /* Scroll to top button*/
 .form-control {
   font-family: 'Nova Mono', monospace;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .form-control > .mbr-iconfont {
-  font-size: 1.6rem;
+  font-size: 1.76rem;
   font-weight: 400;
 }
 blockquote {
@@ -662,7 +662,7 @@ section.lazy-placeholder:after {
   border-bottom-right-radius: 30px;
   min-height: 77px;
   transition: all .3s;
-  background: #232323;
+  background: #ffffff;
 }
 .cid-rEGu7c2H7H .navbar:hover {
   opacity: 1;
@@ -670,7 +670,7 @@ section.lazy-placeholder:after {
 }
 .cid-rEGu7c2H7H .navbar.opened {
   transition: all .3s;
-  background: #232323 !important;
+  background: #ffffff !important;
 }
 .cid-rEGu7c2H7H .navbar .dropdown-item {
   padding: .235rem 1.5rem;
@@ -766,7 +766,7 @@ section.lazy-placeholder:after {
   }
 }
 .cid-rEGu7c2H7H .navbar.navbar-short {
-  background: #232323 !important;
+  background: #ffffff !important;
   min-height: 60px;
 }
 .cid-rEGu7c2H7H .navbar.navbar-short .navbar-logo img {
@@ -886,7 +886,7 @@ section.lazy-placeholder:after {
   padding: 0.667em 1.667em;
 }
 .cid-rEGu7c2H7H .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #232323;
+  background: #ffffff;
 }
 .cid-rEGu7c2H7H .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -915,7 +915,7 @@ section.lazy-placeholder:after {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #232323;
+  background-color: #000000;
 }
 .cid-rEGu7c2H7H button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -1006,7 +1006,7 @@ section.lazy-placeholder:after {
 }
 .cid-rEGvWnPvLI {
   padding-top: 225px;
-  padding-bottom: 180px;
+  padding-bottom: 225px;
   background-image: url("../../../assets/images/43384076-computer-programmer-showing-software-engineer-and-programming-stock-photo-1-1300x1007.jpg");
 }
 .cid-rEGvWnPvLI H1 {
@@ -1843,7 +1843,7 @@ section.lazy-placeholder:after {
   border-bottom-right-radius: 30px;
   min-height: 77px;
   transition: all .3s;
-  background: #232323;
+  background: #ffffff;
 }
 .cid-rEGu7c2H7H .navbar:hover {
   opacity: 1;
@@ -1851,7 +1851,7 @@ section.lazy-placeholder:after {
 }
 .cid-rEGu7c2H7H .navbar.opened {
   transition: all .3s;
-  background: #232323 !important;
+  background: #ffffff !important;
 }
 .cid-rEGu7c2H7H .navbar .dropdown-item {
   padding: .235rem 1.5rem;
@@ -1947,7 +1947,7 @@ section.lazy-placeholder:after {
   }
 }
 .cid-rEGu7c2H7H .navbar.navbar-short {
-  background: #232323 !important;
+  background: #ffffff !important;
   min-height: 60px;
 }
 .cid-rEGu7c2H7H .navbar.navbar-short .navbar-logo img {
@@ -2067,7 +2067,7 @@ section.lazy-placeholder:after {
   padding: 0.667em 1.667em;
 }
 .cid-rEGu7c2H7H .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #232323;
+  background: #ffffff;
 }
 .cid-rEGu7c2H7H .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
