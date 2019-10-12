@@ -1039,7 +1039,7 @@ section.lazy-placeholder:after {
 .cid-rEGB8JqtU4 {
   padding-top: 15px;
   padding-bottom: 0px;
-  background-color: #232323;
+  background-color: #000000;
 }
 .cid-rEGB8JqtU4 H1 {
   color: #75f166;
@@ -1055,7 +1055,7 @@ section.lazy-placeholder:after {
 .cid-rC94Nv3ACu {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #232323;
+  background-color: #000000;
 }
 .cid-rC94Nv3ACu h4 {
   margin-bottom: 0;
@@ -1154,7 +1154,7 @@ section.lazy-placeholder:after {
   overflow: hidden;
   height: 100%;
   position: relative;
-  background-color: #232323;
+  background-color: #000000;
   padding: 3rem 1.2rem 1.2rem 1.2rem;
   border-radius: 8px;
   transition: all 0.3s;
@@ -1218,7 +1218,7 @@ section.lazy-placeholder:after {
 .cid-rEGQ82QIY2 {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #43a637;
+  background-color: #33772b;
 }
 .cid-rEGQ82QIY2 H1 {
   color: #57468b;
@@ -1263,7 +1263,7 @@ section.lazy-placeholder:after {
 .cid-rEGKzymiLj {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #232323;
+  background-color: #000000;
 }
 .cid-rEGKzymiLj H1 {
   color: #57468b;
@@ -1392,7 +1392,7 @@ section.lazy-placeholder:after {
 .cid-rEGZtUUDLi {
   padding-top: 150px;
   padding-bottom: 75px;
-  background-color: #232323;
+  background-color: #000000;
 }
 .cid-rEGZtUUDLi section {
   position: relative;
@@ -1427,7 +1427,7 @@ section.lazy-placeholder:after {
   transform: translate(-50%) scale(2, 1.6) rotate(180deg);
 }
 .cid-rEGZtUUDLi #e2_shape {
-  fill: #43a637 !important;
+  fill: #33772b !important;
 }
 .cid-rEGZtUUDLi .quote {
   background-color: rgba(0, 0, 0, 0.1);
@@ -1451,7 +1451,7 @@ section.lazy-placeholder:after {
 .cid-rEGZtUUDLi .card-img2 {
   width: 45px;
   height: 45px;
-  background: #232323;
+  background: #000000;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -1460,7 +1460,7 @@ section.lazy-placeholder:after {
 .cid-rEGZtUUDLi .soc-item {
   width: 45px;
   height: 45px;
-  background: #232323;
+  background: #000000;
   margin-bottom: 1rem;
   border-radius: 100%;
   display: flex;
