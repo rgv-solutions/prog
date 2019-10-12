@@ -97,7 +97,7 @@ body {
   background-color: #57468b !important;
 }
 .bg-warning {
-  background-color: #43a637 !important;
+  background-color: #80d476 !important;
 }
 .bg-danger {
   background-color: #b1a374 !important;
@@ -184,8 +184,8 @@ body {
 }
 .btn-warning,
 .btn-warning:active {
-  background-color: #43a637 !important;
-  border-color: #43a637 !important;
+  background-color: #80d476 !important;
+  border-color: #80d476 !important;
   color: #ffffff !important;
 }
 .btn-warning:hover,
@@ -193,14 +193,14 @@ body {
 .btn-warning.focus,
 .btn-warning.active {
   color: #ffffff !important;
-  background-color: #2c6d24 !important;
-  border-color: #2c6d24 !important;
+  background-color: #4bc13d !important;
+  border-color: #4bc13d !important;
 }
 .btn-warning.disabled,
 .btn-warning:disabled {
   color: #ffffff !important;
-  background-color: #2c6d24 !important;
-  border-color: #2c6d24 !important;
+  background-color: #4bc13d !important;
+  border-color: #4bc13d !important;
 }
 .btn-danger,
 .btn-danger:active {
@@ -348,22 +348,22 @@ body {
 .btn-warning-outline,
 .btn-warning-outline:active {
   background: none;
-  border-color: #24591e;
-  color: #24591e;
+  border-color: #43ae36;
+  color: #43ae36;
 }
 .btn-warning-outline:hover,
 .btn-warning-outline:focus,
 .btn-warning-outline.focus,
 .btn-warning-outline.active {
   color: #ffffff;
-  background-color: #43a637;
-  border-color: #43a637;
+  background-color: #80d476;
+  border-color: #80d476;
 }
 .btn-warning-outline.disabled,
 .btn-warning-outline:disabled {
   color: #ffffff !important;
-  background-color: #43a637 !important;
-  border-color: #43a637 !important;
+  background-color: #80d476 !important;
+  border-color: #80d476 !important;
 }
 .btn-danger-outline,
 .btn-danger-outline:active {
@@ -432,7 +432,7 @@ body {
   color: #57468b !important;
 }
 .text-warning {
-  color: #43a637 !important;
+  color: #80d476 !important;
 }
 .text-danger {
   color: #b1a374 !important;
@@ -461,7 +461,7 @@ a.text-info:focus {
 }
 a.text-warning:hover,
 a.text-warning:focus {
-  color: #24591e !important;
+  color: #43ae36 !important;
 }
 a.text-danger:hover,
 a.text-danger:focus {
@@ -482,7 +482,7 @@ a.text-black:focus {
   background-color: #57468b;
 }
 .alert-warning {
-  background-color: #43a637;
+  background-color: #80d476;
 }
 .alert-danger {
   background-color: #b1a374;
@@ -531,7 +531,7 @@ a:hover {
 }
 .mbr-plan-header.bg-warning .mbr-plan-subtitle,
 .mbr-plan-header.bg-warning .mbr-plan-price-desc {
-  color: #8ed786;
+  color: #ffffff;
 }
 .mbr-plan-header.bg-danger .mbr-plan-subtitle,
 .mbr-plan-header.bg-danger .mbr-plan-price-desc {
@@ -1008,9 +1008,9 @@ section.lazy-placeholder:after {
   }
 }
 .cid-rEG2Q3wigy {
-  padding-top: 225px;
-  padding-bottom: 225px;
-  background-image: url("../../../assets/images/pourquoi-coder-1139x718.png");
+  padding-top: 0px;
+  padding-bottom: 150px;
+  background-image: url("../../../assets/images/43384076-computer-programmer-showing-software-engineer-and-programming-stock-photo-1-1300x1007.jpg");
 }
 .cid-rEG2Q3wigy H1 {
   color: #232323;
@@ -1022,28 +1022,6 @@ section.lazy-placeholder:after {
 }
 .cid-rEG2Q3wigy H3 {
   color: #716c80;
-}
-#custom-html-8 #calendarEmbedWrapper {
-  width: 80%;
-  min-height: 300px;
-  margin-left: 10%;
-  position: relative;
-}
-#custom-html-8 #calendarEmbed,
-#custom-html-8 #calendarEmbedBlocker {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-#custom-html-8 #calendarEmbedBlocker {
-  background-color: #e15151;
-}
-#custom-html-8 #calendarEmbedBlocker p {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 19%;
-  text-align: center;
-  font-size: x-large;
 }
 .cid-rCkoJWatAI {
   padding-top: 45px;
@@ -1099,6 +1077,28 @@ section.lazy-placeholder:after {
   .cid-rCkoJWatAI h1 {
     padding-bottom: 1rem;
   }
+}
+#custom-html-8 #calendarEmbedWrapper {
+  width: 80%;
+  min-height: 300px;
+  margin-left: 10%;
+  position: relative;
+}
+#custom-html-8 #calendarEmbed,
+#custom-html-8 #calendarEmbedBlocker {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#custom-html-8 #calendarEmbedBlocker {
+  background-color: #e15151;
+}
+#custom-html-8 #calendarEmbedBlocker p {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 19%;
+  text-align: center;
+  font-size: x-large;
 }
 .cid-rCkMnCwm9s {
   padding-top: 0px;
