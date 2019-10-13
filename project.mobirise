@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "index.html",
+    "currentPage": "agenda.html",
     "theme": {
       "name": "techm4",
       "title": "TechM4",
@@ -122,7 +122,7 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
+        "title": "Acceuil - Info3",
         "meta_descr": "",
         "header_custom": "<script src=\"grammar/piethon.js\"></script>\n<script src=\"main.js\"></script>\n<script src=\"examples.js\"></script>\n<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"styles.css\">",
         "footer_custom": "<script src=\"lib/jquery.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n<script src=\"lib/jqconsole.js\" type=\"text/javascript\" charset=\"utf-8\"></script>\n<script src=\"lib/ace/ace.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
@@ -1422,7 +1422,7 @@
     },
     "agenda.html": {
       "settings": {
-        "title": "Agenda",
+        "title": "Agenda - info3",
         "order": 1
       },
       "components": [
