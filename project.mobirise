@@ -9,7 +9,7 @@
         "secondaryColor": "#ff2e2e",
         "successColor": "#ffffff",
         "infoColor": "#c63d5c",
-        "warningColor": "#5ed350",
+        "warningColor": "#3d8635",
         "dangerColor": "#B1A374",
         "mainFont": "IBM Plex Sans",
         "display1Font": "IBM Plex Sans Condensed",
@@ -29,13 +29,13 @@
       "titlePreset": "Saas Cloud",
       "nameSelectPreset": "saas",
       "additionalSetColors": [
+        "#3d8635",
         "#5ed350",
         "#fffd39",
         "#fffc00",
         "#c63d5c",
         "#33772b",
-        "#ff1313",
-        "#000000"
+        "#ff1313"
       ]
     },
     "path": "@PROJECT_PATH@",
