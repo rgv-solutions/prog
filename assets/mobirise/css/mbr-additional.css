@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Nova+Mono:400);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i);
 
 
 
@@ -8,21 +9,21 @@ body {
   font-family: IBM Plex Sans;
 }
 .display-1 {
-  font-family: 'Nova Mono', monospace;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 3.2rem;
 }
 .display-1 > .mbr-iconfont {
   font-size: 5.12rem;
 }
 .display-2 {
-  font-family: 'Nova Mono', monospace;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 2.4rem;
 }
 .display-2 > .mbr-iconfont {
   font-size: 3.84rem;
 }
 .display-4 {
-  font-family: 'Nova Mono', monospace;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 1.1rem;
 }
 .display-4 > .mbr-iconfont {
@@ -30,14 +31,14 @@ body {
   font-weight: 400;
 }
 .display-5 {
-  font-family: 'Nova Mono', monospace;
+  font-family: 'IBM Plex Serif', serif;
   font-size: 1.5rem;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'Nova Mono', monospace;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 1.2rem;
 }
 .display-7 > .mbr-iconfont {
@@ -524,8 +525,11 @@ a:hover {
   color: #dfd9c6;
 }
 /* Scroll to top button*/
+.scrollToTop_wraper {
+  display: none;
+}
 .form-control {
-  font-family: 'Nova Mono', monospace;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 1.1rem;
 }
 .form-control > .mbr-iconfont {
@@ -1238,22 +1242,24 @@ section.lazy-placeholder:after {
 }
 .cid-rEGQ82QIY2 .title1 {
   text-align: left;
-  color: #ffffff;
+  color: #f2f6ff;
 }
 .cid-rEGQ82QIY2 .subtitle2 {
   text-align: left;
-  color: #ffffff;
+  color: #f16402;
 }
 .cid-rEGQ82QIY2 .title2 {
   color: #ffffff;
   text-align: left;
 }
 .cid-rEGQ82QIY2 .subtitle1 {
-  color: #ffffff;
+  color: #f16402;
+  text-align: left;
 }
 .cid-rEGQ82QIY2 .text1,
 .cid-rEGQ82QIY2 .btn1 {
   color: #efefef;
+  text-align: left;
 }
 .cid-rEGQ82QIY2 .text2,
 .cid-rEGQ82QIY2 .btn2 {
@@ -1287,14 +1293,14 @@ section.lazy-placeholder:after {
 }
 .cid-rEGKzymiLj .subtitle2 {
   text-align: left;
-  color: #80d476;
+  color: #f16402;
 }
 .cid-rEGKzymiLj .title2 {
   color: #80d476;
   text-align: left;
 }
 .cid-rEGKzymiLj .subtitle1 {
-  color: #80d476;
+  color: #f16402;
 }
 .cid-rEGKzymiLj .text1,
 .cid-rEGKzymiLj .btn1 {
