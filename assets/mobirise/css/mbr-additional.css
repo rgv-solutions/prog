@@ -1021,7 +1021,7 @@ section.lazy-placeholder:after {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  background-color: #ff1313;
+  background-color: #5ed350;
   transition: all 0.3s;
   padding: 1rem 1rem !important;
   box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
