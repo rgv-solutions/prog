@@ -1341,10 +1341,12 @@ section.lazy-placeholder:after {
 }
 .cid-rEGKzymiLj .subtitle1 {
   color: #f16402;
+  text-align: left;
 }
 .cid-rEGKzymiLj .text1,
 .cid-rEGKzymiLj .btn1 {
   color: #efefef;
+  text-align: left;
 }
 #custom-html-d {
   /* Type valid CSS here */
@@ -1561,7 +1563,7 @@ section.lazy-placeholder:after {
   }
 }
 .cid-rEGZtUUDLi .text1 {
-  color: #80d476;
+  color: #ffffff;
 }
 .cid-rEGZtUUDLi .item-title {
   color: #80d476;
@@ -1570,8 +1572,8 @@ section.lazy-placeholder:after {
   color: #ffffff;
 }
 .cid-rEGZtUUDLi .theme {
-  color: #ffffff;
-  text-align: left;
+  color: #80d476;
+  text-align: center;
 }
 .cid-rEGZtUUDLi .copyright > p {
   color: #ff3366;
