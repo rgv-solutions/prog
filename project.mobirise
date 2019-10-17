@@ -623,6 +623,109 @@
         {
           "alias": false,
           "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h5, h4, p": {
+              "margin-bottom": "0"
+            },
+            "p": {
+              "color": "#767676"
+            },
+            ".container-fluid when (@fullWidth)": {
+              "@media (max-width: 767px)": {
+                "padding-left": "1rem !important",
+                "padding-right": "1rem !important"
+              }
+            },
+            ".card-link when (@showTitleLink), (@showPrice)": {
+              "& when (@showTitle), (@showText)": {
+                "padding-top": "1.2rem",
+                "& when (@showBorder)": {
+                  "margin-top": "1.2rem",
+                  "border-top": "1px solid @borderColor"
+                }
+              }
+            },
+            ".card-wrapper when not (@transparentBg)": {
+              "transition": "all 0.3s",
+              "background-color": "@CardBg",
+              ".card-box": {
+                "padding": "1.2rem"
+              },
+              "&:hover": {
+                "box-shadow": "0 10px 55px 5px rgba(137, 173, 255, 0.35)"
+              }
+            },
+            "& when (@showTitleLink) and (@showPrice)": {
+              ".card-title-link": {
+                "float": "left"
+              },
+              ".card-price": {
+                "float": "right"
+              }
+            },
+            ".card-title-link when (@showTitleLink)": {
+              "position": "relative",
+              "&:after": {
+                "content": "\"\"",
+                "transition": "all 0.3s",
+                "border-bottom": "1px solid currentColor",
+                "position": "absolute",
+                "bottom": "-4px",
+                "left": "0",
+                "width": "0"
+              }
+            },
+            ".card-title-link:hover:after when (@showTitleLink)": {
+              "width": "100%"
+            },
+            ".card-box": {
+              "padding-top": "2rem",
+              "display": "inline-block",
+              "width": "100%"
+            },
+            ".card-wrapper": {
+              "height": "100%",
+              "& when not (@transparentBg)": {
+                "border-radius": "8px",
+                "overflow": "hidden"
+              },
+              ".card-title when (@showTitle)": {
+                "transition": "all 0.3s"
+              },
+              "&:hover .card-title when (@showTitle)": {
+                "color": "@primaryColor"
+              }
+            },
+            "img when (@transparentBg)": {
+              "border-radius": "8px"
+            },
+            ".card-title, .main-title, .card-title-link": {
+              "color": "#57468b"
+            },
+            ".card-title": {
+              "color": "#f0f080",
+              "text-align": "right"
+            }
+          },
+          "_name": "shop05",
+          "_customHTML": "<section class=\"shop5 featuresLink\" group=\"Shops\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" title=\"Show Main Title\" name=\"showmainTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Title Link\" name=\"showTitleLink\" checked>\n        <input type=\"checkbox\" title=\"Show Price\" name=\"showPrice\">\n        <input type=\"checkbox\" title=\"Show Border Link\" name=\"showBorder\" condition=\"(showTitleLink || showPrice) && (showText || showTitle)\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#cccccc\" condition=\"showBorder && (showTitleLink || showPrice) && (showText || showTitle)\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparentBg\" condition=\"showText || showTitle || showTitleLink || showPrice\" checked>\n        <input type=\"color\" title=\"Color\" name=\"CardBg\" value=\"#ffffff\" condition=\"!transparentBg && (showText || showTitle || showTitleLink || showPrice)\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#355632\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container-fluid px-5': fullWidth, 'container px-3': !fullWidth}\">\n        <h4 class=\"main-title pb-5 align-left mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showmainTitle\" data-app-selector=\".main-title\">Modern Technologies</h4>\n\n        <div class=\"row justify-content-center\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"https://codecombat.com/students?_cc=SandSinkSoft\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/type-real-code-logo.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box align-center\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-class=\"{'pb-2': showTitle}\">Lorem ipsum dolor sit amet, conse ctetue.</p>\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Card 1</h4>\n\n                        <div class=\"card-link\" mbr-if=\"showTitleLink || showPrice\">\n\n                            <h4 class=\"card-title-link mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitleLink\" data-app-selector=\".card-title\"><a href=\"https://codecombat.com/students?_cc=SandSinkSoft\" class=\"text-white\">Inscription à la classe python CODECOMBAT</a></h4>\n\n                            <h5 class=\"card-price mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showPrice\" data-app-selector=\".card-price\"><a href=\"#\" class=\"text-primary\">$1</a></h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/pong-game.gif\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box align-center\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-class=\"{'pb-2': showTitle}\">Lorem ipsum dolor sit amet, conse ctetue.</p>\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Card 2</h4>\n                        <div class=\"card-link\" mbr-if=\"showTitleLink || showPrice\">\n\n                            <h4 class=\"card-title-link mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitleLink\" data-app-selector=\".card-title\"></h4>\n\n                            <h5 class=\"card-price mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showPrice\" data-app-selector=\".card-price\"><a href=\"#\" class=\"text-primary\">$20</a></h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/shop/shop2.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box align-center\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-class=\"{'pb-2': showTitle}\">Lorem ipsum dolor sit amet, conse ctetue.</p>\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Card 3\n                        </h4>\n\n                        <div class=\"card-link\" mbr-if=\"showTitleLink || showPrice\">\n\n                            <h4 class=\"card-title-link mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitleLink\" data-app-selector=\".card-title\">Blue Backpack</h4>\n\n                            <h5 class=\"card-price mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showPrice\" data-app-selector=\".card-price\"><a href=\"#\" class=\"text-primary\">$44</a></h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/shop/shop3.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box align-center\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-class=\"{'pb-2': showTitle}\">Lorem ipsum dolor sit amet, conse ctetue.</p>\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Card 4</h4>\n\n                        <div class=\"card-link\" mbr-if=\"showTitleLink || showPrice\">\n\n                            <h4 class=\"card-title-link mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitleLink\" data-app-selector=\".card-title\">Red Snapback</h4>\n\n                            <h5 class=\"card-price mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showPrice\" data-app-selector=\".card-price\"><a href=\"#\" class=\"text-primary\">$95</a></h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rESQZSUy64",
+          "_anchor": "shop05-13",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 15px)",
               "padding-bottom": "(@paddingBottom * 15px)"
@@ -846,108 +949,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "h5, h4, p": {
-              "margin-bottom": "0"
-            },
-            "p": {
-              "color": "#767676"
-            },
-            ".container-fluid when (@fullWidth)": {
-              "@media (max-width: 767px)": {
-                "padding-left": "1rem !important",
-                "padding-right": "1rem !important"
-              }
-            },
-            ".card-link when (@showTitleLink), (@showPrice)": {
-              "& when (@showTitle), (@showText)": {
-                "padding-top": "1.2rem",
-                "& when (@showBorder)": {
-                  "margin-top": "1.2rem",
-                  "border-top": "1px solid @borderColor"
-                }
-              }
-            },
-            ".card-wrapper when not (@transparentBg)": {
-              "transition": "all 0.3s",
-              "background-color": "@CardBg",
-              ".card-box": {
-                "padding": "1.2rem"
-              },
-              "&:hover": {
-                "box-shadow": "0 10px 55px 5px rgba(137, 173, 255, 0.35)"
-              }
-            },
-            "& when (@showTitleLink) and (@showPrice)": {
-              ".card-title-link": {
-                "float": "left"
-              },
-              ".card-price": {
-                "float": "right"
-              }
-            },
-            ".card-title-link when (@showTitleLink)": {
-              "position": "relative",
-              "&:after": {
-                "content": "\"\"",
-                "transition": "all 0.3s",
-                "border-bottom": "1px solid currentColor",
-                "position": "absolute",
-                "bottom": "-4px",
-                "left": "0",
-                "width": "0"
-              }
-            },
-            ".card-title-link:hover:after when (@showTitleLink)": {
-              "width": "100%"
-            },
-            ".card-box": {
-              "padding-top": "2rem",
-              "display": "inline-block",
-              "width": "100%"
-            },
-            ".card-wrapper": {
-              "height": "100%",
-              "& when not (@transparentBg)": {
-                "border-radius": "8px",
-                "overflow": "hidden"
-              },
-              ".card-title when (@showTitle)": {
-                "transition": "all 0.3s"
-              },
-              "&:hover .card-title when (@showTitle)": {
-                "color": "@primaryColor"
-              }
-            },
-            "img when (@transparentBg)": {
-              "border-radius": "8px"
-            },
-            ".card-title, .main-title, .card-title-link": {
-              "color": "#57468b"
-            },
-            ".card-title": {
-              "color": "#ffffff"
-            }
-          },
-          "_name": "shop05",
-          "_customHTML": "<section class=\"shop5 featuresLink\" group=\"Shops\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" title=\"Show Main Title\" name=\"showmainTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Title Link\" name=\"showTitleLink\" checked>\n        <input type=\"checkbox\" title=\"Show Price\" name=\"showPrice\">\n        <input type=\"checkbox\" title=\"Show Border Link\" name=\"showBorder\" condition=\"(showTitleLink || showPrice) && (showText || showTitle)\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#cccccc\" condition=\"showBorder && (showTitleLink || showPrice) && (showText || showTitle)\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparentBg\" condition=\"showText || showTitle || showTitleLink || showPrice\" checked>\n        <input type=\"color\" title=\"Color\" name=\"CardBg\" value=\"#ffffff\" condition=\"!transparentBg && (showText || showTitle || showTitleLink || showPrice)\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#5ed350\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container-fluid px-5': fullWidth, 'container px-3': !fullWidth}\">\n        <h4 class=\"main-title pb-5 align-left mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showmainTitle\" data-app-selector=\".main-title\">Modern Technologies</h4>\n\n        <div class=\"row justify-content-center\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"https://codecombat.com/students?_cc=SandSinkSoft\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/type-real-code-logo.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box align-center\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-class=\"{'pb-2': showTitle}\">Lorem ipsum dolor sit amet, conse ctetue.</p>\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Card 1</h4>\n\n                        <div class=\"card-link\" mbr-if=\"showTitleLink || showPrice\">\n\n                            <h4 class=\"card-title-link mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitleLink\" data-app-selector=\".card-title\"><a href=\"https://codecombat.com/students?_cc=SandSinkSoft\" class=\"text-white\">Inscription à la classe python CODECOMBAT</a></h4>\n\n                            <h5 class=\"card-price mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showPrice\" data-app-selector=\".card-price\"><a href=\"#\" class=\"text-primary\">$1</a></h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/shop/shop1.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box align-center\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-class=\"{'pb-2': showTitle}\">Lorem ipsum dolor sit amet, conse ctetue.</p>\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Card 2</h4>\n                        <div class=\"card-link\" mbr-if=\"showTitleLink || showPrice\">\n\n                            <h4 class=\"card-title-link mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitleLink\" data-app-selector=\".card-title\">Men's Shoes</h4>\n\n                            <h5 class=\"card-price mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showPrice\" data-app-selector=\".card-price\"><a href=\"#\" class=\"text-primary\">$20</a></h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/shop/shop2.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box align-center\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-class=\"{'pb-2': showTitle}\">Lorem ipsum dolor sit amet, conse ctetue.</p>\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Card 3\n                        </h4>\n\n                        <div class=\"card-link\" mbr-if=\"showTitleLink || showPrice\">\n\n                            <h4 class=\"card-title-link mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitleLink\" data-app-selector=\".card-title\">Blue Backpack</h4>\n\n                            <h5 class=\"card-price mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showPrice\" data-app-selector=\".card-price\"><a href=\"#\" class=\"text-primary\">$44</a></h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/shop/shop3.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box align-center\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-class=\"{'pb-2': showTitle}\">Lorem ipsum dolor sit amet, conse ctetue.</p>\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Card 4</h4>\n\n                        <div class=\"card-link\" mbr-if=\"showTitleLink || showPrice\">\n\n                            <h4 class=\"card-title-link mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitleLink\" data-app-selector=\".card-title\">Red Snapback</h4>\n\n                            <h5 class=\"card-price mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showPrice\" data-app-selector=\".card-price\"><a href=\"#\" class=\"text-primary\">$95</a></h5>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rESQZSUy64",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "shop05-13"
         },
         {
           "alias": false,
