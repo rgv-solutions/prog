@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i);
 
 
 
@@ -8,21 +8,21 @@ body {
   font-family: IBM Plex Sans;
 }
 .display-1 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Lato', sans-serif;
   font-size: 2.5rem;
 }
 .display-1 > .mbr-iconfont {
   font-size: 4rem;
 }
 .display-2 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Lato', sans-serif;
   font-size: 2rem;
 }
 .display-2 > .mbr-iconfont {
   font-size: 3.2rem;
 }
 .display-4 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
 }
 .display-4 > .mbr-iconfont {
@@ -30,14 +30,14 @@ body {
   font-weight: 400;
 }
 .display-5 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
 }
 .display-7 > .mbr-iconfont {
@@ -542,7 +542,7 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
 }
 .form-control > .mbr-iconfont {
