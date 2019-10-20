@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i);
 
 
 
@@ -8,36 +8,36 @@ body {
   font-family: IBM Plex Sans;
 }
 .display-1 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 3.1rem;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2.5rem;
 }
 .display-1 > .mbr-iconfont {
-  font-size: 4.96rem;
+  font-size: 4rem;
 }
 .display-2 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 2.1rem;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2rem;
 }
 .display-2 > .mbr-iconfont {
-  font-size: 3.36rem;
+  font-size: 3.2rem;
 }
 .display-4 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.1rem;
 }
 .display-4 > .mbr-iconfont {
-  font-size: 1.92rem;
+  font-size: 1.76rem;
   font-weight: 400;
 }
 .display-5 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   font-size: 1.3rem;
 }
 .display-7 > .mbr-iconfont {
@@ -50,19 +50,19 @@ body {
 /* 0.65 - min scale variable, may vary */
 @media (max-width: 768px) {
   .display-1 {
-    font-size: 2.48rem;
-    font-size: calc( 1.7349999999999999rem + (3.1 - 1.7349999999999999) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.7349999999999999rem + (3.1 - 1.7349999999999999) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 2rem;
+    font-size: calc( 1.525rem + (2.5 - 1.525) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.525rem + (2.5 - 1.525) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-2 {
-    font-size: 1.68rem;
-    font-size: calc( 1.385rem + (2.1 - 1.385) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.385rem + (2.1 - 1.385) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 1.6rem;
+    font-size: calc( 1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-4 {
-    font-size: 0.96rem;
-    font-size: calc( 1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 0.88rem;
+    font-size: calc( 1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-5 {
     font-size: 1.2rem;
@@ -542,11 +542,11 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.1rem;
 }
 .form-control > .mbr-iconfont {
-  font-size: 1.92rem;
+  font-size: 1.76rem;
   font-weight: 400;
 }
 blockquote {
@@ -1071,7 +1071,7 @@ section.lazy-placeholder:after {
   color: #000000;
 }
 .cid-rEKPvz2c0g H3 {
-  color: #efefef;
+  color: #ffffff;
 }
 .cid-rEKPvz2c0g H1 {
   color: #ffffff;
