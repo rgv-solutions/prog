@@ -1076,33 +1076,6 @@ section.lazy-placeholder:after {
 .cid-rEKPvz2c0g H1 {
   color: #ffffff;
 }
-.cid-rFtcAoL79V {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  background-color: #44b06a;
-}
-.cid-rFtcAoL79V .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rFtcAoL79V H2 {
-  color: #74b5b9;
-}
-.cid-rFtcplHe1W {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-rFtcplHe1W H1 {
-  color: #000000;
-  text-align: center;
-}
-.cid-rFtcplHe1W .mbr-text,
-.cid-rFtcplHe1W .mbr-section-btn {
-  color: #716c80;
-}
-.cid-rFtcplHe1W H3 {
-  color: #716c80;
-}
 .cid-rFs4zXqveG {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1113,76 +1086,6 @@ section.lazy-placeholder:after {
 }
 .cid-rFs4zXqveG H2 {
   color: #74b5b9;
-}
-.cid-rFs4CQ6mNz {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  background-color: #44b06a;
-}
-.cid-rFs4CQ6mNz .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rFs4CQ6mNz H2 {
-  color: #74b5b9;
-}
-.cid-rFtcVRhIMc {
-  padding-top: 30px;
-  padding-bottom: 15px;
-  background-color: #000000;
-}
-.cid-rFtcVRhIMc li {
-  list-style: none;
-}
-.cid-rFtcVRhIMc .item-wrap {
-  display: flex;
-  align-items: center;
-  margin-bottom: 14px;
-}
-.cid-rFtcVRhIMc .mbr-iconfont {
-  font-size: 16px!important;
-  padding-right: 12px;
-}
-.cid-rFtcVRhIMc h4 {
-  margin: 0;
-}
-.cid-rFtcVRhIMc .item {
-  color: #57468b;
-}
-.cid-rFtcVRhIMc ul {
-  padding: 0;
-  margin: 0;
-}
-.cid-rFtcVRhIMc .col-title {
-  color: #57468b;
-}
-.cid-rFtcVRhIMc .col-title1 {
-  color: #ffffff;
-}
-.cid-rFtcVRhIMc .col-title2 {
-  color: #ffffff;
-}
-.cid-rFtcVRhIMc .col-title3 {
-  color: #ffffff;
-}
-.cid-rFtcVRhIMc .col-title4 {
-  color: #ffffff;
-}
-.cid-rFtcVRhIMc .item1 {
-  color: #ffffff;
-}
-.cid-rFtcVRhIMc .item2 {
-  color: #716c80;
-}
-.cid-rFtcVRhIMc .item3 {
-  color: #716c80;
-}
-.cid-rFtcVRhIMc .item4 {
-  color: #716c80;
-}
-@media (max-width: 768px) {
-  .cid-rFtcVRhIMc .md-pb {
-    padding-bottom: 1rem;
-  }
 }
 .cid-rFtcldM2KB {
   padding-top: 15px;
@@ -1223,8 +1126,8 @@ section.lazy-placeholder:after {
   color: #74b5b9;
 }
 .cid-rFsp0Opy39 {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: #000000;
 }
 .cid-rFsp0Opy39 li {
@@ -2042,7 +1945,7 @@ section.lazy-placeholder:after {
   width: 100%;
   margin: 0;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 .cid-rEH7offXpJ .modal-body {
   position: relative;
@@ -2494,7 +2397,7 @@ section.lazy-placeholder:after {
   width: 100%;
   margin: 0;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 .cid-rEH9YrrdHZ .modal-body {
   position: relative;
