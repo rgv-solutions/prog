@@ -38,10 +38,10 @@ body {
 }
 .display-7 {
   font-family: 'Source Code Pro', monospace;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .display-7 > .mbr-iconfont {
-  font-size: 2.08rem;
+  font-size: 1.6rem;
 }
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
@@ -1034,7 +1034,7 @@ section.lazy-placeholder:after {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
+  background-color: #44b06a;
   transition: all 0.3s;
   padding: 1rem 1rem !important;
   box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
@@ -1229,7 +1229,7 @@ section.lazy-placeholder:after {
 .cid-rEGQ82QIY2 .text2,
 .cid-rEGQ82QIY2 .btn2 {
   text-align: left;
-  color: #ffffff;
+  color: #efefef;
 }
 .cid-rFs3xzqhEm {
   padding-top: 0px;
