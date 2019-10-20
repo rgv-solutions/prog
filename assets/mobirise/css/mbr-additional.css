@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i);
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i);
 
 
 
@@ -9,21 +8,21 @@ body {
   font-family: IBM Plex Sans;
 }
 .display-1 {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 3.2rem;
 }
 .display-1 > .mbr-iconfont {
   font-size: 5.12rem;
 }
 .display-2 {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 2.4rem;
 }
 .display-2 > .mbr-iconfont {
   font-size: 3.84rem;
 }
 .display-4 {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1.1rem;
 }
 .display-4 > .mbr-iconfont {
@@ -31,14 +30,14 @@ body {
   font-weight: 400;
 }
 .display-5 {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1.5rem;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1.2rem;
 }
 .display-7 > .mbr-iconfont {
@@ -543,7 +542,7 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1.1rem;
 }
 .form-control > .mbr-iconfont {
@@ -1078,25 +1077,27 @@ section.lazy-placeholder:after {
   color: #ffffff;
 }
 .cid-rEGB8JqtU4 {
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #000000;
+  background-color: #89d056;
 }
 .cid-rEGB8JqtU4 H1 {
-  color: #acf279;
+  color: #000000;
   text-align: center;
 }
 .cid-rEGB8JqtU4 .mbr-text,
 .cid-rEGB8JqtU4 .mbr-section-btn {
-  color: #716c80;
+  color: #000000;
+  text-align: left;
 }
 .cid-rEGB8JqtU4 H3 {
-  color: #716c80;
+  color: #000000;
+  text-align: left;
 }
 .cid-rEGQ82QIY2 {
   padding-top: 30px;
   padding-bottom: 0px;
-  background-color: #000000;
+  background-color: #89d056;
 }
 .cid-rEGQ82QIY2 H1 {
   color: #57468b;
@@ -1116,18 +1117,18 @@ section.lazy-placeholder:after {
 }
 .cid-rEGQ82QIY2 .title1 {
   text-align: left;
-  color: #f2f6ff;
+  color: #000000;
 }
 .cid-rEGQ82QIY2 .subtitle2 {
   text-align: left;
-  color: #acf279;
+  color: #000000;
 }
 .cid-rEGQ82QIY2 .title2 {
-  color: #ffffff;
+  color: #000000;
   text-align: left;
 }
 .cid-rEGQ82QIY2 .subtitle1 {
-  color: #7fbcff;
+  color: #000000;
   text-align: left;
 }
 .cid-rEGQ82QIY2 .text1,
@@ -1139,6 +1140,80 @@ section.lazy-placeholder:after {
 .cid-rEGQ82QIY2 .btn2 {
   text-align: left;
   color: #ffffff;
+}
+.cid-rFqh15rott {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #89d056;
+}
+.cid-rFqh15rott H1 {
+  color: #000000;
+  text-align: center;
+}
+.cid-rFqh15rott .mbr-text,
+.cid-rFqh15rott .mbr-section-btn {
+  color: #716c80;
+}
+.cid-rFqh15rott H3 {
+  color: #716c80;
+}
+.cid-rFqg8MPKP7 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-rFqg8MPKP7 H1 {
+  color: #57468b;
+}
+.cid-rFqg8MPKP7 .mbr-text,
+.cid-rFqg8MPKP7 .mbr-section-btn {
+  color: #716c80;
+}
+.cid-rFqg8MPKP7 H3 {
+  color: #716c80;
+}
+.cid-rFqg8MPKP7 .row {
+  justify-content: space-between;
+}
+.cid-rFqg8MPKP7 .col-lg-6 {
+  max-width: 500px;
+}
+.cid-rFqg8MPKP7 .title1 {
+  text-align: left;
+  color: #acf279;
+}
+.cid-rFqg8MPKP7 .subtitle2 {
+  text-align: left;
+  color: #ffffff;
+}
+.cid-rFqg8MPKP7 .title2 {
+  color: #acf279;
+  text-align: left;
+}
+.cid-rFqg8MPKP7 .subtitle1 {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-rFqg8MPKP7 .text1,
+.cid-rFqg8MPKP7 .btn1 {
+  color: #efefef;
+  text-align: left;
+}
+.cid-rFqhOZtyjK {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #89d056;
+}
+.cid-rFqhOZtyjK H1 {
+  color: #000000;
+  text-align: center;
+}
+.cid-rFqhOZtyjK .mbr-text,
+.cid-rFqhOZtyjK .mbr-section-btn {
+  color: #716c80;
+}
+.cid-rFqhOZtyjK H3 {
+  color: #716c80;
 }
 .cid-rEGKzymiLj {
   padding-top: 75px;
@@ -1163,7 +1238,7 @@ section.lazy-placeholder:after {
 }
 .cid-rEGKzymiLj .title1 {
   text-align: left;
-  color: #7fbcff;
+  color: #acf279;
 }
 .cid-rEGKzymiLj .subtitle2 {
   text-align: left;
@@ -1309,7 +1384,7 @@ section.lazy-placeholder:after {
   transform: translate(-50%) scale(2, 1.6) rotate(180deg);
 }
 .cid-rEGZtUUDLi #e2_shape {
-  fill: #89d056 !important;
+  fill: #000000 !important;
 }
 .cid-rEGZtUUDLi .quote {
   background-color: rgba(0, 0, 0, 0.1);
