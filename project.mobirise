@@ -124,9 +124,9 @@
       "text": "By continuing you agree to our <a href='terms.html'>Terms of Service</a> and <a href='policy.html'>Privacy Policy</a>."
     },
     "PWA": {
-      "enabled": false,
+      "enabled": true,
       "name": "",
-      "icon": "@PROJECT_PATH@/assets/images/itmelogo-200x200-512x512.png",
+      "icon": "@PROJECT_PATH@/assets/images/apple-touch-icon-512x512.png",
       "themeColor": "#43a637"
     },
     "google-analytics": "",
