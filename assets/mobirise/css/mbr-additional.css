@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i);
 
 
 
@@ -8,21 +9,21 @@ body {
   font-family: IBM Plex Sans;
 }
 .display-1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
 }
 .display-1 > .mbr-iconfont {
   font-size: 4rem;
 }
 .display-2 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
 }
 .display-2 > .mbr-iconfont {
   font-size: 3.2rem;
 }
 .display-4 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.1rem;
 }
 .display-4 > .mbr-iconfont {
@@ -30,14 +31,14 @@ body {
   font-weight: 400;
 }
 .display-5 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
 }
 .display-7 > .mbr-iconfont {
@@ -91,7 +92,7 @@ body {
   background-color: #fff200 !important;
 }
 .bg-success {
-  background-color: #ffffff !important;
+  background-color: #5b686b !important;
 }
 .bg-info {
   background-color: #acf279 !important;
@@ -164,23 +165,23 @@ body {
 }
 .btn-success,
 .btn-success:active {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-  color: #808080 !important;
+  background-color: #5b686b !important;
+  border-color: #5b686b !important;
+  color: #ffffff !important;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success.focus,
 .btn-success.active {
-  color: #808080 !important;
-  background-color: #d9d9d9 !important;
-  border-color: #d9d9d9 !important;
+  color: #ffffff !important;
+  background-color: #384042 !important;
+  border-color: #384042 !important;
 }
 .btn-success.disabled,
 .btn-success:disabled {
-  color: #808080 !important;
-  background-color: #d9d9d9 !important;
-  border-color: #d9d9d9 !important;
+  color: #ffffff !important;
+  background-color: #384042 !important;
+  border-color: #384042 !important;
 }
 .btn-warning,
 .btn-warning:active {
@@ -328,22 +329,22 @@ body {
 .btn-success-outline,
 .btn-success-outline:active {
   background: none;
-  border-color: #cccccc;
-  color: #cccccc;
+  border-color: #2c3234;
+  color: #2c3234;
 }
 .btn-success-outline:hover,
 .btn-success-outline:focus,
 .btn-success-outline.focus,
 .btn-success-outline.active {
-  color: #808080;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  color: #ffffff;
+  background-color: #5b686b;
+  border-color: #5b686b;
 }
 .btn-success-outline.disabled,
 .btn-success-outline:disabled {
-  color: #808080 !important;
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
+  color: #ffffff !important;
+  background-color: #5b686b !important;
+  border-color: #5b686b !important;
 }
 .btn-warning-outline,
 .btn-warning-outline:active {
@@ -426,7 +427,7 @@ body {
   color: #ff2e2e !important;
 }
 .text-success {
-  color: #ffffff !important;
+  color: #5b686b !important;
 }
 .text-info {
   color: #acf279 !important;
@@ -453,7 +454,7 @@ a.text-secondary:focus {
 }
 a.text-success:hover,
 a.text-success:focus {
-  color: #cccccc !important;
+  color: #2c3234 !important;
 }
 a.text-info:hover,
 a.text-info:focus {
@@ -523,7 +524,7 @@ a:hover {
 }
 .mbr-plan-header.bg-success .mbr-plan-subtitle,
 .mbr-plan-header.bg-success .mbr-plan-price-desc {
-  color: #ffffff;
+  color: #9ba7aa;
 }
 .mbr-plan-header.bg-info .mbr-plan-subtitle,
 .mbr-plan-header.bg-info .mbr-plan-price-desc {
@@ -542,7 +543,7 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.1rem;
 }
 .form-control > .mbr-iconfont {
@@ -582,10 +583,10 @@ blockquote {
 .btn-success:hover,
 .btn-success:focus {
   color: white !important;
-  box-shadow: 0 6px 15px 0 #ffffff !important;
-  -webkit-box-shadow: 0 6px 16px 0 #ffffff !important;
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
+  box-shadow: 0 6px 15px 0 #5b686b !important;
+  -webkit-box-shadow: 0 6px 16px 0 #5b686b !important;
+  background-color: #5b686b !important;
+  border-color: #5b686b !important;
 }
 .jq-selectbox li:hover,
 .jq-selectbox li.selected {
@@ -1269,7 +1270,10 @@ section.lazy-placeholder:after {
 }
 .cid-rG05VeqFve .nav-link:hover,
 .cid-rG05VeqFve .dropdown-item:hover {
-  color: #000000;
+  color: #07af42;
+}
+.cid-rG05VeqFve .widget-text {
+  color: #ff0800;
 }
 .cid-rFZXoaC4Yv .mbr-text,
 .cid-rFZXoaC4Yv .typed-text,
@@ -3429,5 +3433,8 @@ section.lazy-placeholder:after {
 }
 .cid-rG05VeqFve .nav-link:hover,
 .cid-rG05VeqFve .dropdown-item:hover {
-  color: #000000;
+  color: #07af42;
+}
+.cid-rG05VeqFve .widget-text {
+  color: #ff0800;
 }
