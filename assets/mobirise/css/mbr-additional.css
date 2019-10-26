@@ -1271,10 +1271,6 @@ section.lazy-placeholder:after {
 .cid-rG05VeqFve .dropdown-item:hover {
   color: #000000;
 }
-.cid-rFZXoaC4Yv {
-  padding-top: 120px;
-  padding-bottom: 30px;
-}
 .cid-rFZXoaC4Yv .mbr-text,
 .cid-rFZXoaC4Yv .typed-text,
 .cid-rFZXoaC4Yv .mbr-section-text {
@@ -1327,6 +1323,9 @@ section.lazy-placeholder:after {
   }
 }
 .cid-rFZXoaC4Yv SPAN {
+  text-align: center;
+}
+.cid-rFZXoaC4Yv .mbr-section-title {
   text-align: center;
 }
 .cid-rFs4zXqveG {
