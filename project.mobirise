@@ -154,7 +154,7 @@
         "title": "Acceuil - Info3",
         "meta_descr": "",
         "header_custom": "<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js\" type=\"text/javascript\"></script> \n<script src=\"http://www.skulpt.org/js/skulpt.min.js\" type=\"text/javascript\"></script> \n<script src=\"http://www.skulpt.org/js/skulpt-stdlib.js\" type=\"text/javascript\"></script> ",
-        "footer_custom": "  <script src=\"js/skulpt.min.js\" type=\"text/javascript\"></script>\n    <script src=\"js/skulpt-stdlib.js\" type=\"text/javascript\"></script>",
+        "footer_custom": "  <script src=\"js/skulpt.min.js\" type=\"text/javascript\"></script>\n    <script src=\"js/skulpt-stdlib.js\" type=\"text/javascript\"></script>\n<script type=\"text/javascript\"> \n// output functions are configurable.  This one just appends some text\n// to a pre element.\nfunction outf(text) { \n    var mypre = document.getElementById(\"output\"); \n    mypre.innerHTML = mypre.innerHTML + text; \n} \nfunction builtinRead(x) {\n    if (Sk.builtinFiles === undefined || Sk.builtinFiles[\"files\"][x] === undefined)\n            throw \"File not found: '\" + x + \"'\";\n    return Sk.builtinFiles[\"files\"][x];\n}\n// Here's everything you need to run a python program in skulpt\n// grab the code from your textarea\n// get a reference to your pre element for output\n// configure the output function\n// call Sk.importMainWithBody()\nfunction runit() { \n   var prog = document.getElementById(\"yourcode\").value; \n   var mypre = document.getElementById(\"output\"); \n   mypre.innerHTML = ''; \n   Sk.pre = \"output\";\n   Sk.configure({output:outf, read:builtinRead}); \n   (Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'mycanvas';\n   var myPromise = Sk.misceval.asyncToPromise(function() {\n       return Sk.importMainWithBody(\"<stdin>\", false, prog, true);\n   });\n   myPromise.then(function(mod) {\n       console.log('success');\n   },\n       function(err) {\n       console.log(err.toString());\n   });\n} \n</script> ",
         "html_before": ""
       },
       "components": [
@@ -1116,7 +1116,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n\n[JS_CODE_0] \n\n<h3>Try This</h3> \n<form> \n<textarea id=\"yourcode\" cols=\"40\" rows=\"10\">import turtle\n\nt = turtle.Turtle()\nt.forward(100)\n\nprint \"Hello World\" \n</textarea><br> \n<button type=\"button\" onclick=\"runit()\">Run</button> \n</form> \n<pre id=\"output\"></pre> \n<!-- If you want turtle graphics include a canvas -->\n<div id=\"mycanvas\"></div> ",
+          "_customHTML": "<!-- Type valid HTML here -->\n\n\n\n<h3>Try This</h3> \n<form> \n<textarea id=\"yourcode\" cols=\"40\" rows=\"10\">import turtle\n\nt = turtle.Turtle()\nt.forward(100)\n\nprint \"Hello World\" \n</textarea><br> \n<button type=\"button\" onclick=\"runit()\">Run</button> \n</form> \n<pre id=\"output\"></pre> \n<!-- If you want turtle graphics include a canvas -->\n<div id=\"mycanvas\"></div> ",
           "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
           "alias": "code-editor",
           "_tags": [
@@ -1125,9 +1125,7 @@
           "_name": "pro.custom-html",
           "_anchor": "custom-html-1z",
           "_PHPplaceholders": [],
-          "_JSplaceholders": [
-            "<script type=\"text/javascript\"> \n// output functions are configurable.  This one just appends some text\n// to a pre element.\nfunction outf(text) { \n    var mypre = document.getElementById(\"output\"); \n    mypre.innerHTML = mypre.innerHTML + text; \n} \nfunction builtinRead(x) {\n    if (Sk.builtinFiles === undefined || Sk.builtinFiles[\"files\"][x] === undefined)\n            throw \"File not found: '\" + x + \"'\";\n    return Sk.builtinFiles[\"files\"][x];\n}\n// Here's everything you need to run a python program in skulpt\n// grab the code from your textarea\n// get a reference to your pre element for output\n// configure the output function\n// call Sk.importMainWithBody()\nfunction runit() { \n   var prog = document.getElementById(\"yourcode\").value; \n   var mypre = document.getElementById(\"output\"); \n   mypre.innerHTML = ''; \n   Sk.pre = \"output\";\n   Sk.configure({output:outf, read:builtinRead}); \n   (Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'mycanvas';\n   var myPromise = Sk.misceval.asyncToPromise(function() {\n       return Sk.importMainWithBody(\"<stdin>\", false, prog, true);\n   });\n   myPromise.then(function(mod) {\n       console.log('success');\n   },\n       function(err) {\n       console.log(err.toString());\n   });\n} \n</script>"
-          ]
+          "_JSplaceholders": []
         },
         {
           "_name": "content4",
