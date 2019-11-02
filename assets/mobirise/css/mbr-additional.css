@@ -1466,6 +1466,18 @@ section.lazy-placeholder:after {
   text-align: left;
   color: #dcd32a;
 }
+#custom-html-1z {
+  /* Type valid CSS here */
+}
+#custom-html-1z div {
+  padding: 80px 0;
+  color: #777;
+  text-align: center;
+}
+#custom-html-1z p {
+  font-size: 60px;
+  color: #777;
+}
 .cid-rFs3xzqhEm {
   padding-top: 0px;
   padding-bottom: 0px;
