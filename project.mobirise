@@ -113,7 +113,7 @@
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
-    "uniqCompNum": 73,
+    "uniqCompNum": 71,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -134,7 +134,7 @@
       "text": "By continuing you agree to our <a href='terms.html'>Terms of Service</a> and <a href='policy.html'>Privacy Policy</a>."
     },
     "PWA": {
-      "enabled": true,
+      "enabled": false,
       "name": "",
       "icon": "@PROJECT_PATH@/assets/images/itmelogo-200x200-512x512.png",
       "themeColor": "#7f1933"
@@ -1546,6 +1546,20 @@
           ],
           "_name": "pro.custom-html",
           "_anchor": "custom-html-d",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<iframe src=\"https://paiza.io/projects/e/DmlFtHN65UJCJJwHwKEzHg?theme=ambiance\" width=\"100%\" height=\"500\" scrolling=\"no\" seamless=\"seamless\"></iframe>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-1z",
           "_PHPplaceholders": [],
           "_JSplaceholders": []
         },
