@@ -1108,6 +1108,8 @@
           "_isUserblock": true,
           "_sourceTheme": "techm4",
           "_cid": "rEGQ82QIY2",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1681,6 +1683,20 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<iframe id=\"preview-iframe\" src=\"https://doculet.net/doc/41f6009e2a169e65e544131f466a3cb9\" align=\"middle\" width=\"100%\" height=\"540\" allowfullscreen=\"true\" scrolling=\"no\" frameborder=\"0\"></iframe> ",
+          "_customCSS": "/* Type valid CSS here */\n\n.gistcontainer {\n  max-height: 300px;\n  overflow: auto;\n}\n\n.gistcontainer:target .show {display:none;}\n.gistcontainer:target {max-height:none;}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-1z",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "alias": false,

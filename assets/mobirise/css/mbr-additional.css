@@ -1934,6 +1934,19 @@ section.lazy-placeholder:after {
 .cid-rFDl5DW3xO LABEL {
   color: #ffffff;
 }
+#custom-html-1z {
+  /* Type valid CSS here */
+}
+#custom-html-1z .gistcontainer {
+  max-height: 300px;
+  overflow: auto;
+}
+#custom-html-1z .gistcontainer:target .show {
+  display: none;
+}
+#custom-html-1z .gistcontainer:target {
+  max-height: none;
+}
 .cid-rEGZtUUDLi {
   padding-top: 75px;
   padding-bottom: 60px;
